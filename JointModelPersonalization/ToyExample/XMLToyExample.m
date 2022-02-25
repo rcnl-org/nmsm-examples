@@ -1,4 +1,7 @@
 
+% Make sure the nmsm-core project is open by double-clicking Project.prj in
+% the nmsm-core repository.
+
 % Call the tool with xml file as argument
 JointModelPersonalizationTool('ToySettingsFile.xml')
 
