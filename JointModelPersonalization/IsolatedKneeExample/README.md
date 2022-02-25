@@ -1,4 +1,4 @@
-# Toy Example
+# Isolated Knee Example
 
 This example assumes the Project.prj for nmsm-core is active in order to add the appropriate functions to your path.
 
