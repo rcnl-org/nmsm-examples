@@ -22,7 +22,7 @@
 
 % Make sure the nmsm-core project is open by double-clicking Project.prj in
 % the nmsm-core repository.
-JointModelPersonalizationTool('IsolatedReinboltKneeExample.xml')
+JointStructurePersonalizationTool('IsolatedReinboltKneeExample.xml')
 
 % calculate improvement in marker error for markers on distal and proximal
 % bodies

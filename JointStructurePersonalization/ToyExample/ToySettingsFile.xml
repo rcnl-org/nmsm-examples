@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="40000">
-	<JointModelPersonalizationTool>
+	<JointStructurePersonalizationTool>
 		<!--Directory used for writing results.-->
 		<results_directory/>
 		<!--Directory for input files-->
@@ -12,14 +12,14 @@
         <!--The accuracy to compare against, depends on model/data units (0.01 == 1cm for data in units meters)-->
         <desired_error>0.01</desired_error>
 		<!--The set of <Task> to be completed by the tool, each Task is a separate optimization-->
-		<JointPersonalizationTaskList>
-			<JointPersonalizationTask name="Right Elbow">
+		<JSPTaskList>
+			<JSPTask name="Right Elbow">
 				<!--Flag indicating whether or not the task is enabled.-->
 				<is_enabled>true</is_enabled>
 				<!--The markers file to use for the task-->
 				<marker_file_name>simple_arm.trc</marker_file_name>
 				<!--A joint that will be optimized in the task-->
-				<Joint name="r_elbow">
+				<JSPJoint name="r_elbow">
 					<parent_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
 						<translation>true false false</translation>
@@ -40,9 +40,9 @@
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
 						<orientation_bounds>1.0</orientation_bounds>
 					</child_frame_transformation>
-				</Joint>
-			</JointPersonalizationTask>
-		</JointPersonalizationTaskList>
+				</JSPJoint>
+			</JSPTask>
+		</JSPTaskList>
 		<!--*Optional* The accuracy of the IKSolver solution in absolute terms. Default is 1e-5. It determines the number of significant digits to which the solution can be trusted.-->
 		<accuracy>1e-06</accuracy>
 		<!--*Optional* The minimum step of the least squares algorithm. Default is 1e-4 which means the solution will be optimized to 0.1 mm resolution-->
@@ -55,5 +55,5 @@
 		<step_tolerance>1e-06</step_tolerance>
 		<!--*Optional* The number of allowed iterations for the lsqnonlin, setting this lower can help cancel an optimization that won't converge-->
 		<max_function_evaluations>3e3</max_function_evaluations>
-	</JointModelPersonalizationTool>
+	</JointStructurePersonalizationTool>
 </OpenSimDocument>

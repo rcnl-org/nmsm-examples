@@ -40,7 +40,7 @@ inputs.desiredError = 0.01;
 params.accuracy = 1e-6; % accuracy of the Inverse Kinematics Solver
 params.display = 'iter';
 
-newModel = JointModelPersonalization(inputs, params);
+newModel = JointStructurePersonalization(inputs, params);
 assert(isa(newModel, 'org.opensim.modeling.Model'))
 
 % getFrameParameterValue() returns the current joint parameter value in the

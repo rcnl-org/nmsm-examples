@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="40000">
-	<JointModelPersonalizationTool>
+	<JointStructurePersonalizationTool>
 		<!--Directory used for writing results.-->
 		<results_directory/>
 		<!--Directory for input files-->
 		<input_directory/>
 		<!--Name of the input model file (.osim) to use-->
-		<input_model_file>Rajagopal_4.0_RCNL_markers_scaled_gait_2.osim</input_model_file>
+		<input_model_file>Rajagopal_4.0_RCNL_markers_scaled.osim</input_model_file>
 		<!--Name of the output model file (.osim) to create.-->
-		<output_model_file>Rajagopal_4.0_RCNL_markers_scaled_gait_3.osim</output_model_file>
+		<output_model_file>Rajagopal_4.0_RCNL_markers_scaled_all_isolated.osim</output_model_file>
         <desired_error>0.01</desired_error>
 		<!--The set of <Task> to be completed by the tool, each Task is a separate optimization-->
-		<JointPersonalizationTaskList>
+		<JSPTaskList>
 			<!--The Task to be completed, includes the marker file and Joints to optimize-->
-			<JointPersonalizationTask name="Gait">
+			<JSPTask name="Left Ankle">
 				<!--Flag indicating whether or not the task is enabled.-->
 				<is_enabled>true</is_enabled>
 				<!--The markers file to use for the task-->
-				<marker_file_name>trc/gait_3_strides.trc</marker_file_name>
+				<marker_file_name>trc/l_ankle.trc</marker_file_name>
 				<!--A joint that will be optimized in the task-->
-				<Joint name="ankle_r">
+				<JSPJoint name="ankle_l">
 					<parent_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
 						<translation>true true false</translation>
 						<!--Three boolean values (separated by spaces) for if the joint orientation parameter is to be optimized-->
 						<orientation>true true false</orientation>
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
-						<translation_bounds>0.03</translation_bounds>
+						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</parent_frame_transformation>
 					<child_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
@@ -38,10 +38,10 @@
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</child_frame_transformation>
-				</Joint>
-				<Joint name="subtalar_r">
+				</JSPJoint>
+				<JSPJoint name="subtalar_l">
 					<parent_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
 						<translation>false true true</translation>
@@ -50,7 +50,7 @@
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</parent_frame_transformation>
 					<child_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
@@ -60,10 +60,18 @@
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</child_frame_transformation>
-				</Joint>
-				<Joint name="ankle_l">
+				</JSPJoint>
+			</JSPTask>
+            <!--The Task to be completed, includes the marker file and Joints to optimize-->
+			<JSPTask name="Right Ankle">
+				<!--Flag indicating whether or not the task is enabled.-->
+				<is_enabled>true</is_enabled>
+				<!--The markers file to use for the task-->
+				<marker_file_name>trc/r_ankle.trc</marker_file_name>
+				<!--A joint that will be optimized in the task-->
+				<JSPJoint name="ankle_r">
 					<parent_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
 						<translation>true true false</translation>
@@ -72,7 +80,7 @@
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</parent_frame_transformation>
 					<child_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
@@ -82,10 +90,10 @@
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</child_frame_transformation>
-				</Joint>
-				<Joint name="subtalar_l">
+				</JSPJoint>
+				<JSPJoint name="subtalar_r">
 					<parent_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
 						<translation>false true true</translation>
@@ -94,7 +102,7 @@
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</parent_frame_transformation>
 					<child_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
@@ -104,10 +112,17 @@
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</child_frame_transformation>
-				</Joint>
-				<Joint name="knee_r">
+				</JSPJoint>
+			</JSPTask>
+            <JSPTask name="Left Knee">
+				<!--Flag indicating whether or not the task is enabled.-->
+				<is_enabled>true</is_enabled>
+				<!--The markers file to use for the task-->
+				<marker_file_name>trc/l_knee.trc</marker_file_name>
+				<!--A joint that will be optimized in the task-->
+				<JSPJoint name="knee_l">
 					<parent_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
 						<translation>true true false</translation>
@@ -116,7 +131,7 @@
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</parent_frame_transformation>
 					<child_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
@@ -126,10 +141,17 @@
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</child_frame_transformation>
-				</Joint>
-				<Joint name="knee_l">
+				</JSPJoint>
+			</JSPTask>
+            <JSPTask name="Right Knee">
+				<!--Flag indicating whether or not the task is enabled.-->
+				<is_enabled>true</is_enabled>
+				<!--The markers file to use for the task-->
+				<marker_file_name>trc/r_knee.trc</marker_file_name>
+				<!--A joint that will be optimized in the task-->
+				<JSPJoint name="knee_r">
 					<parent_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
 						<translation>true true false</translation>
@@ -138,7 +160,7 @@
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</parent_frame_transformation>
 					<child_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
@@ -148,55 +170,69 @@
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</child_frame_transformation>
-				</Joint>
-				<Joint name="hip_r">
+				</JSPJoint>
+			</JSPTask>
+            <JSPTask name="Right Hip">
+				<!--Flag indicating whether or not the task is enabled.-->
+				<is_enabled>true</is_enabled>
+				<!--The markers file to use for the task-->
+				<marker_file_name>trc/r_hip.trc</marker_file_name>
+				<!--A joint that will be optimized in the task-->
+				<JSPJoint name="hip_r">
 					<parent_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
-						<translation>true true false</translation>
+						<translation>true true true</translation>
 						<!--Three boolean values (separated by spaces) for if the joint orientation parameter is to be optimized-->
 						<orientation>false false false</orientation>
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</parent_frame_transformation>
 					<child_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
-						<translation>true true false</translation>
+						<translation>false false false</translation>
 						<!--Three boolean values (separated by spaces) for if the joint orientation parameter is to be optimized-->
 						<orientation>false false false</orientation>
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</child_frame_transformation>
-				</Joint>
-				<Joint name="hip_l">
+				</JSPJoint>
+			</JSPTask>
+            <JSPTask name="Left Hip">
+				<!--Flag indicating whether or not the task is enabled.-->
+				<is_enabled>true</is_enabled>
+				<!--The markers file to use for the task-->
+				<marker_file_name>trc/l_hip.trc</marker_file_name>
+				<!--A joint that will be optimized in the task-->
+				<JSPJoint name="hip_l">
 					<parent_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
-						<translation>true true false</translation>
+						<translation>true true true</translation>
 						<!--Three boolean values (separated by spaces) for if the joint orientation parameter is to be optimized-->
 						<orientation>false false false</orientation>
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</parent_frame_transformation>
 					<child_frame_transformation>
 						<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
-						<translation>true true false</translation>
+						<translation>false false false</translation>
 						<!--Three boolean values (separated by spaces) for if the joint orientation parameter is to be optimized-->
 						<orientation>false false false</orientation>
 						<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
 						<translation_bounds>0.1</translation_bounds>
 						<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-						<orientation_bounds>0.5</orientation_bounds>
+						<orientation_bounds>1.0</orientation_bounds>
 					</child_frame_transformation>
-				</Joint>
-			</JointPersonalizationTask>
-		</JointPersonalizationTaskList>
+				</JSPJoint>
+			</JSPTask>
+		</JSPTaskList>
 		<!--*Optional* The accuracy of the IKSolver solution in absolute terms. Default is 1e-5. It determines the number of significant digits to which the solution can be trusted.-->
 		<accuracy>1e-06</accuracy>
 		<!--*Optional* The minimum step of the least squares algorithm. Default is 1e-4 which means the solution will be optimized to 0.1 mm resolution-->
@@ -208,6 +244,6 @@
 		<!--*Optional* The step tolerance determines when the lsqnonlin algorithm stops. The larger it is, the earlier the algorithm stops, but with lower accuracy-->
 		<step_tolerance>1e-06</step_tolerance>
 		<!--*Optional* The number of allowed iterations for the lsqnonlin, setting this lower can help cancel an optimization that won't converge-->
-		<max_function_evaluations>9e3</max_function_evaluations>
-	</JointModelPersonalizationTool>
+		<max_function_evaluations>3e3</max_function_evaluations>
+	</JointStructurePersonalizationTool>
 </OpenSimDocument>
