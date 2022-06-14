@@ -24,7 +24,7 @@
 % the nmsm-core repository.
 
 % Call the tool with xml file as argument
-JointStructurePersonalizationTool('ToySettingsFile.xml')
+JointModelPersonalizationTool('ToySettingsFile.xml')
 
 % Check result converges to expected value
 newModel = Model('translation_result_from_xml.osim');
