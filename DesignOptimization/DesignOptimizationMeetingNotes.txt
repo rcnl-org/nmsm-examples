@@ -1,0 +1,50 @@
+Things to Talk About Tomorrow
+
+automatic scaling??
+
+Kinematics define the state
+Controls are synergy activations or torques
+Initial Time, always constant?
+Final Time, ask for range? vs ask for final time upper/lower
+Guess is just data inputs?
+Initial guess of parameters is baked into parameter definition?
+
+Do we only do single phase?
+
+Bounds:
+	initial state bounds
+		can initial state change?
+		by how much?
+	final state bounds
+		can final state change?
+		by how much?
+	state bounds
+		obviously states can change
+		how to control how much state changes
+		is state only kinematics?
+		can use add time-variable 
+	can you explain path constraints again?
+	control bounds
+		can change? yes
+		should they always be bounded 0-1?
+		how to describe bounds amount? by percent??
+	please explain integrals and integral bounds
+	duration upper/lower
+		boolean element
+		how much? range
+	define static parameters
+		if it's a static parameter it changes
+		upper and lower bounds
+	
+Endpoint:
+	objective
+		how to let user add more objectives??
+	what are eventgroups and do we care?
+
+Continuous:
+	How do we calculate the dynamics??
+	what is a path and integrand
+	
+	do you have examples of endpoint cost terms vs continuous cost terms?
+	
+
