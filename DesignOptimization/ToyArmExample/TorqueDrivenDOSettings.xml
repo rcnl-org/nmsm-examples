@@ -29,65 +29,43 @@
     		<joint_jerks_multiple>1</joint_jerks_multiple>
     		<torque_controls_max>2</torque_controls_max>
     	</RCNLDesignVariableBoundsTerms>
-		<RCNLContinuousCostTermSet>
-			<objects>
-				<!--Tracking cost terms-->
-				<RCNLTrackingCostTerms>
-					<RCNLCostTermSet>
-						<objects>
-							<RCNLCostTerm>
-								<type>coordinate</type>
-								<coordinate>r_elbow_flex</coordinate>
-								<is_enabled>true</is_enabled>
-								<max_allowable_error>0.1</max_allowable_error>
-							</RCNLCostTerm>
-							<RCNLCostTerm>
-								<type>controller</type>
-								<controller>r_elbow_flex_moment</controller>
-								<is_enabled>true</is_enabled>
-								<max_allowable_error>20</max_allowable_error>
-							</RCNLCostTerm>
-						</objects>
-						<groups />
-					</RCNLCostTermSet>
-				</RCNLTrackingCostTerms>
-				<RCNLMinimizationCostTerms>
-					<RCNLCostTermSet>
-						<objects>
-							<RCNLCostTerm>
-								<type>joint_jerk</type>
-								<coordinate>r_elbow_flex</coordinate>
-								<is_enabled>true</is_enabled>
-								<max_allowable_error>2</max_allowable_error>
-							</RCNLCostTerm>
-						</objects>
-						<groups />
-					</RCNLCostTermSet>
-				</RCNLMinimizationCostTerms>
-			</objects>
-			<groups />
-		</RCNLContinuousCostTermSet>
-		<RCNLPathConstraintTerms>
-			<RCNLConstraintTermSet>
-				<objects>
-					<RCNLConstraintTerm>
-						<type>torque_model_moment_consistency</type>
-						<load>r_elbow_flex_moment</load>
-						<is_enabled>true</is_enabled>
-						<max_error>0.1</max_error>
-						<min_error>-0.1</min_error>
-					</RCNLConstraintTerm>
-				</objects>
-				<groups />
-			</RCNLConstraintTermSet>
-		</RCNLPathConstraintTerms>
-		<RCNLTerminalConstraintTerms>
-			<RCNLConstraintTermSet>
-				<objects />
-				<groups />
-			</RCNLConstraintTermSet>
-		</RCNLTerminalConstraintTerms>
-		<!--*Optional* list prefix of the data file, if left blank, use prefix from IK folder-->
-		<trial_prefix></trial_prefix>
+		<RCNLCostTermSet>
+				<RCNLCostTerm>
+					<type>coordinate_tracking</type>
+					<coordinate>r_elbow_flex</coordinate>
+					<is_enabled>true</is_enabled>
+					<max_allowable_error>0.1</max_allowable_error>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<type>controller_tracking</type>
+					<controller>r_elbow_flex_moment</controller>
+					<is_enabled>true</is_enabled>
+					<max_allowable_error>20</max_allowable_error>
+				</RCNLCostTerm>
+				<RCNLCostTerm>
+					<type>joint_jerk_minimization</type>
+					<coordinate>r_elbow_flex</coordinate>
+					<is_enabled>true</is_enabled>
+					<max_allowable_error>2</max_allowable_error>
+				</RCNLCostTerm>
+                <RCNLCostTerm>
+                    <type>user_defined</type>
+                    <function_name>joint_parameter_cost</function_name>
+                    <cost_term_type>parameter</cost_term_type>
+                    <initial_values>0</initial_values>
+                    <upper_bounds>1</upper_bounds>
+                    <lower_bounds>-1</lower_bounds>
+                    <is_enabled>true</is_enabled>
+                </RCNLCostTerm>
+		</RCNLCostTermSet>
+		<RCNLConstraintTermSet>
+			<RCNLConstraintTerm>
+				<type>torque_model_moment_consistency</type>
+				<load>r_elbow_flex_moment</load>
+				<is_enabled>true</is_enabled>
+				<max_error>0.1</max_error>
+				<min_error>-0.1</min_error>
+			</RCNLConstraintTerm>
+		</RCNLConstraintTermSet>
     </DesignOptimizationTool>
 </NMSMPipelineDocument>
