@@ -50,7 +50,7 @@
 				</RCNLCostTerm>
                 <RCNLCostTerm>
                     <type>user_defined</type>
-                    <function_name>joint_parameter_cost</function_name>
+                    <function_name>jointParameterCost</function_name>
                     <cost_term_type>parameter</cost_term_type>
                     <initial_values>0</initial_values>
                     <upper_bounds>1</upper_bounds>
