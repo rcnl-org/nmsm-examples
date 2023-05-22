@@ -29,6 +29,16 @@
     		<joint_jerks_multiple>1</joint_jerks_multiple>
     		<torque_controls_max>2</torque_controls_max>
     	</RCNLDesignVariableBoundsTerms>
+		<model_functions>applyJointParameter</model_functions>
+		<RCNLParameterTermSet>
+			<RCNLParameterTerm>
+				<type>elbow_translation</type>
+				<initial_values>0</initial_values>
+                <upper_bounds>0.1</upper_bounds>
+                <lower_bounds>-0.1</lower_bounds>
+				<is_enabled>true</is_enabled>
+			</RCNLParameterTerm>
+		</RCNLParameterTermSet>
 		<RCNLCostTermSet>
 				<RCNLCostTerm>
 					<type>coordinate_tracking</type>
@@ -51,10 +61,7 @@
                 <RCNLCostTerm>
                     <type>user_defined</type>
                     <function_name>jointParameterCost</function_name>
-                    <cost_term_type>parameter</cost_term_type>
-                    <initial_values>0</initial_values>
-                    <upper_bounds>1</upper_bounds>
-                    <lower_bounds>-1</lower_bounds>
+                    <cost_term_type>discrete</cost_term_type>
                     <is_enabled>true</is_enabled>
                 </RCNLCostTerm>
 		</RCNLCostTermSet>
