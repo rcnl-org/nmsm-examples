@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="40000">
+	<ExternalLoads name="externalloads">
+		<objects>
+			<ExternalForce name="left">
+				<!--Name of the body the force is applied to.-->
+				<applied_to_body>calcn_l</applied_to_body>
+				<!--Name of the body the force is expressed in (default is ground).-->
+				<force_expressed_in_body>ground</force_expressed_in_body>
+				<!--Name of the body the point is expressed in (default is ground).-->
+				<point_expressed_in_body>ground</point_expressed_in_body>
+				<!--Identifier (string) to locate the force to be applied in the data source.-->
+				<force_identifier>F1</force_identifier>
+				<!--Identifier (string) to locate the point to be applied in the data source.-->
+				<point_identifier>EC1</point_identifier>
+				<!--Identifier (string) to locate the torque to be applied in the data source.-->
+				<torque_identifier>M1</torque_identifier>
+				<!--Name of the data source (Storage) that will supply the force data.-->
+				<data_source_name>C:\Users\gl24\Desktop\Patient 3 Collaboration with Marleny\nms_results\Right\GRF Files\Patient3_NormalGait_1pt0_02_Right_01_GRF.mot</data_source_name>
+			</ExternalForce>
+			<ExternalForce name="right">
+				<!--Name of the body the force is applied to.-->
+				<applied_to_body>calcn_r</applied_to_body>
+				<!--Name of the body the force is expressed in (default is ground).-->
+				<force_expressed_in_body>ground</force_expressed_in_body>
+				<!--Name of the body the point is expressed in (default is ground).-->
+				<point_expressed_in_body>ground</point_expressed_in_body>
+				<!--Identifier (string) to locate the force to be applied in the data source.-->
+				<force_identifier>F2</force_identifier>
+				<!--Identifier (string) to locate the point to be applied in the data source.-->
+				<point_identifier>EC2</point_identifier>
+				<!--Identifier (string) to locate the torque to be applied in the data source.-->
+				<torque_identifier>M2</torque_identifier>
+				<!--Name of the data source (Storage) that will supply the force data.-->
+				<data_source_name>C:\Users\gl24\Desktop\Patient 3 Collaboration with Marleny\nms_results\Right\GRF Files\Patient3_NormalGait_1pt0_02_Right_01_GRF.mot</data_source_name>
+			</ExternalForce>
+		</objects>
+		<groups />
+		<!--Storage file (.sto) containing (3) components of force and/or torque and point of application.Note: this file overrides the data source specified by the individual external forces if specified.-->
+		<datafile>C:\Github\nmsm-core\nonTrackedScripts\UF Subject 3 Personalization\input_data\Patient3_NormalGait_1pt0_02_Right_01_GRF.mot</datafile>
+	</ExternalLoads>
+</OpenSimDocument>

@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NMSMPipelineDocument Version="0.1.0">
+   <OsimxModel name="UF_Patient3_correctHeight_JMP_MTPGroups_NCPGroups">
+      <!--File name of associated .osim file-->
+      <associated_osim_model>UF_Patient3_correctHeight_JMP_MTPGroups_NCPGroups.osim</associated_osim_model>
+      <!--Optimized muscle parameters-->
+      <RCNLMuscleSet>
+         <objects>
+            <RCNLMuscle name="addbrev_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.162571093294541</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0338135459468883</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>526.144642306274</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="addlong_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.108864439674089</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.132608723101953</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>916.8</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="addmagDist_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.17414067839485</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0858720857016189</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>597.295081967214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="addmagIsch_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.146682808973463</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.203161346876407</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>597.295081967214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="addmagMid_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.155041014495501</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0524996797180846</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>597.295081967214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="addmagProx_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.137076085855898</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.052343461259389</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>597.295081967214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="bflh_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0969739195230007</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.323140396956928</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1313.18360655738</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="bfsh_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.11704884488343</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.112291778827138</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>557.11475409836</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="edl_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0787321105899531</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.419081192205833</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>603.4981556</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="ehl_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0848862165648803</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.370861161379335</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>285.8675474</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="fdl_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0499261309690096</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.424005902596307</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>423.177049180328</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="fhl_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0588347032065853</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.395587660740257</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>907.839344262294</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="gaslat_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0668562947325523</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.427596226551271</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1575.05901639344</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="gasmed_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0572443119487785</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.447534159292946</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>3115.51475409836</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="gem_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0400603124100541</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.065098007666338</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>170.4</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmax1_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.154239348973732</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0512461694855331</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>983.783606557378</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmax2_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.167864775010963</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0725851041964484</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1406.04590163935</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmax3_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.185366375352041</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0773839193690573</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>947.754098360656</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmed1_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0799941323364779</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0611646443986811</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1093.4667688</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmed2_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0853880899648594</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0763215254901423</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>765.0916616</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmed3_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0980651228243039</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0607638953898593</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>871.1992642</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmin1_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0868241905796064</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0206051454773035</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>374.045901639344</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmin2_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0746965633869518</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0348126700477481</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>394.819672131148</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmin3_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0520503628003661</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0696824231989901</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>446.773770491804</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="grac_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.226487876093517</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.171023014106573</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>281.311475409836</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="iliacus_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.108631186555144</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0979522195668958</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1021.14098360656</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="perbrev_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0520316629726411</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.169077156960605</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>521.2015988</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="perlong_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0580703745178285</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.379767403720197</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1115.3714214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="pect_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.118758667890893</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0391903604039948</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>319.6</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="piri_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0323998118329004</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.143190019258947</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1029.7868852459</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="Ps_L1_TP_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.196818041109385</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.167595302904258</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>492.9123734</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="Ps_L3_L4_IVD_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.159128614971252</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.135501848694958</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>541.0976462</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="Ps_L5_TP_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.14595899914856</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.124287603595801</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>394.0710374</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="quadfem_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0856369761056264</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0380608782691673</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>397</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="recfem_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.07585876016447</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.448249850973607</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>2191.74098360656</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="sart_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.398005518998777</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.122463068913854</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>249.413114754098</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="semimem_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0659862832044351</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.332404447585067</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>2200.9868852459</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="semiten_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.190326327591242</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.243774442452946</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>591.295081967214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="soleus_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0486163286502507</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.305792146529938</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>6194.84262295082</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="tfl_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0976363949506522</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.461971282889487</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>411.20655737705</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="tibant_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0775436764292434</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.273004861284505</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1227.45245901639</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="tibpost_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0420514079136212</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.312359208393206</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1730.15409836065</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="vasint_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.10322564668507</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.210204705066092</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1697.36065573771</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="vaslat_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.10353573453906</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.229779839694277</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>5148.76721311476</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="vasmed_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.100412266675094</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.20736405943501</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>2747.82295081966</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="addbrev_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.115617502725134</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0397543564872698</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>625.819672131148</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="addlong_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.110274283066034</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.134326065629406</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>916.8</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="addmagDist_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.177134342836691</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0873483186638493</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>597.295081967214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="addmagIsch_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.152793187079981</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.211624456185071</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>597.295081967214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="addmagMid_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.14926067457624</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0505423525204372</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>597.295081967214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="addmagProx_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.124615530414541</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0475853110908699</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>597.295081967214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="bflh_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0992878182076067</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.330850863267247</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1313.18360655738</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="bfsh_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.117917263973911</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.113124903874504</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>557.11475409836</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="edl_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.077172894512361</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.410781679747606</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>603.4981556</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="ehl_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0836186864951782</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.365323422830537</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>285.8675474</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="fdl_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0497018729345148</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.422101354246877</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>423.177049180328</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="fhl_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0584962058038889</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.393311701342125</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>907.839344262294</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="gaslat_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0669017643039345</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.427887038616518</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1575.05901639344</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="gasmed_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0570777238359216</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.446231778872995</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>3115.51475409836</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="gem_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0324970545828117</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0528077136970689</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>170.4</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmax1_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.151814088690096</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0504403744639079</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>983.783606557378</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmax2_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.166193522903339</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0718624510468373</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1406.04590163935</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmax3_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.179715200127679</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0750247531660612</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>947.754098360656</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmed1_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.08105621324204</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0619767264728773</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1093.4667688</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmed2_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0832527422907817</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0744129104595858</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>765.0916616</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmed3_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0903281374660037</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.055969842668517</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>871.1992642</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmin1_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0833207677121917</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0197737120096294</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>374.045901639344</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmin2_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0698828003563666</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0325691940901771</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>394.819672131148</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="glmin3_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.047856598309782</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0640680209872206</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>446.773770491804</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="grac_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.232942057383033</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.175896623929589</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>281.311475409836</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="iliacus_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.109958414567791</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0991489746961808</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1021.14098360656</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="pect_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.113419787009433</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.037428529713113</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>319.6</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="perbrev_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0503070956874044</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.16347316668014</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>521.2015988</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="perlong_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0572345980216456</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.374301610315536</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1115.3714214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="piri_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0299066455494567</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.132171543905348</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1029.7868852459</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="Ps_L1_TP_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.196703971012299</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.1674981694689</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>492.9123734</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="Ps_L3_L4_IVD_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.159014544951805</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.135404715325711</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>541.0976462</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="Ps_L5_TP_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.145844929164155</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.124190470256393</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>394.0710374</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="quadfem_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0678917235182695</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0301740993414531</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>397</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="recfem_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0779478608206955</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.460594358790392</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>2191.74098360656</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="sart_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.410803915780268</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.126401031761659</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>249.413114754098</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="semimem_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0681023605693989</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.343064140681719</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>2200.9868852459</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="semiten_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.196025534966742</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.251074121472498</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>591.295081967214</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="soleus_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0482674449816034</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.303597700982797</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>6194.84262295082</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="tfl_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.099152397794389</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.469144323013913</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>411.20655737705</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="tibant_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0744874994829023</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.262245103665094</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1227.45245901639</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="tibpost_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0422044191182766</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.313495780535087</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1730.15409836065</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="vasint_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.10404970979703</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.211882795240075</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>1697.36065573771</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="vaslat_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.104383053181321</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.231660318377847</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>5148.76721311476</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="vasmed_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.101194681717776</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.208979845680913</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>2747.82295081966</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IO2_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.120272639324044</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0133636265915604</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>525.013721599453</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IO4_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.128509660492226</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0142788511658028</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>232.964049873407</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IO5_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.100780243143841</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0111978047937602</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>390.795397842821</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IO2_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.120272639722264</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.013363626635807</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>525.013721599453</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IO4_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.128509654264161</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0142788504737957</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>232.964049873407</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IO5_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.100780239407594</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0111978043786215</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>390.795397842821</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="EO10_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.137701564019158</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0153001737799064</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>171.530407632907</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="EO12_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.12421287467318</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0138014305192422</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>290.232987968363</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="EO10_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.137701561933293</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0153001735481437</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>171.530407632907</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="EO12_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.124212883349479</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0138014314832754</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>290.232987968363</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_L2_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0456344227068109</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.103460560158471</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>467.111015580153</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_L4_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0253790499612548</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.057538379353473</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>504.759424332113</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_L2_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0456344227068109</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.103460560158471</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>467.111015580153</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_L4_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0253790499612548</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.057538379353473</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>504.759424332113</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_R7_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.169699067634825</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.17829172951167</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>390.810557525703</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_R10_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.167835891662563</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0988082464174888</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>197.200526991442</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_R11_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.152910331115367</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0765392299967693</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>235.18057219607</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_R12_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.125504973472055</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0628214847240666</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>206.173227765279</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_R7_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.16969943305684</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.178292113436721</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>390.810557525703</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_R10_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.167835389617509</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0988079508538228</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>197.200526991442</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_R11_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.152910691207233</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0765394102406678</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>235.180577704592</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="IL_R12_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.125505555061483</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0628217758385177</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>206.173227765279</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpT_T8_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.127531777560637</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.201406022195702</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>343.9392259028</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpT_T12_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0941316514586395</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.159540761874857</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>320.746677047297</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpT_T8_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.127531237981747</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.201405170059554</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>343.9392259028</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpT_T12_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0941316514586395</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.159540761874857</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>320.746677047297</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpT_R8_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.111549134628929</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.22752632261518</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>321.208522842362</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpT_R11_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.115199323433333</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.164112741171607</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>320.930254549773</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpT_R8_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.111549251585544</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.227526561171118</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>321.208522842362</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpT_R11_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.115199126313651</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.164112460355275</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>320.930254549773</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpL_L2_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0813666411971198</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0895179661457497</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>326.7141150691</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpL_L4_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0551398772457586</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0594645004565365</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>151.840933627358</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpL_L5_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0726061475424291</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.00144256827323502</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>157.795480044118</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpL_L2_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0813663886857482</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0895176883377427</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>326.7141150691</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpL_L4_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0551400703261634</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0594647086802468</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>151.840933627358</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="LTpL_L5_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0726022926309865</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.00144249168229704</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>157.795480044118</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="MF_m1t_3_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.120980296014598</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0362763324008547</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>199.30892894241</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="MF_m2t_3_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.115089046036322</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0350372532517041</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>237.337591179107</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="MF_m3s_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0487099957203505</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0202527571896917</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>303.887703351436</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="MF_m4t_3_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.100849704270273</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0408188584038029</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>406.753591655182</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="MF_m5_laminar_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0414961899119106</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0157586721213089</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>314.522864206039</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="MF_m1t_3_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.120980296014598</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0362763324008547</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>199.30892894241</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="MF_m2t_3_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.11501445552332</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0350145452114152</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>237.337591179107</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="MF_m3s_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0487722479915206</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0202786405861869</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>303.887703351436</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="MF_m4t_3_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.100849554004087</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0408187975836524</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>406.753591655182</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="MF_m5_laminar_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0414961899119106</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0157586721213089</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>314.522864206039</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="QL_post_I1_L3_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.048944623208699</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0411255899962545</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>86.2712245953985</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="QL_post_I2_L4_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0408513864792417</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0343252692734027</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>211.294864415956</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="QL_post_I3_L2_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0670687141162886</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.056354309370437</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>261.455675911957</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="QL_ant_I2_T12_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.111113634175094</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0576967013820961</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>137.96265127945</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="QL_ant_I3_R12_I2_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.119982696281106</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0623020374569064</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>155.742018777112</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="QL_post_I1_L3_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.048944623208699</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0411255899962545</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>86.2712245953985</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="QL_post_I2_L4_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0408513864792417</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0343252692734027</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>211.294864415956</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="QL_post_I3_L2_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.0670687141162886</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.056354309370437</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>261.455675911957</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="QL_ant_I2_T12_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.111113634175094</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0576967013820961</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>137.96265127945</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="QL_ant_I3_R12_I2_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.119982692156144</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0623020353149846</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>155.742018777112</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="rect_abd_r">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.314698479657809</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0855721989917962</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>662.212263382313</max_isometric_force>
+            </RCNLMuscle>
+            <RCNLMuscle name="rect_abd_l">
+               <!--Optimized optimal fiber length-->
+               <optimal_fiber_length>0.314698085424198</optimal_fiber_length>
+               <!--Optimized tendon slack length-->
+               <tendon_slack_length>0.0855720917925586</tendon_slack_length>
+               <!--Optimized max isometric force-->
+               <max_isometric_force>662.212361511272</max_isometric_force>
+            </RCNLMuscle>
+         </objects>
+         <groups/>
+      </RCNLMuscleSet>
+   </OsimxModel>
+</NMSMPipelineDocument>
