@@ -29,620 +29,602 @@
     		<joint_jerks_multiple>1</joint_jerks_multiple>
     		<torque_controls_max>2</torque_controls_max>
     	</RCNLDesignVariableBoundsTerms>
-		<RCNLContinuousCostTermSet>
-			<objects>
-				<!--Tracking cost terms-->
-				<RCNLTrackingCostTerms>
 					<RCNLCostTermSet>
-						<objects>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>pelvis_tilt</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.1</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>pelvis_list</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.1</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>pelvis_rotation</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.1</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>pelvis_tx</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.02</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>pelvis_ty</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.02</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>pelvis_tz</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.02</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>hip_flexion_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>hip_adduction_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>hip_rotation_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>knee_angle_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>ankle_angle_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>subtalar_angle_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>mtp_angle_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>hip_flexion_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>hip_adduction_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>hip_rotation_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>knee_angle_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>ankle_angle_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>subtalar_angle_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>mtp_angle_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>lumbar_extension</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>lumbar_bending</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>lumbar_rotation</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>arm_flex_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>arm_add_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>arm_rot_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>elbow_flex_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>arm_flex_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>arm_add_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>arm_rot_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>coordinate</type>
+								<type>coordinate_tracking</type>
 								<coordinate>elbow_flex_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>0.05</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>hip_flexion_r_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>hip_adduction_r_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>hip_rotation_r_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>knee_angle_r_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>ankle_angle_r_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>subtalar_angle_r_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>mtp_angle_r_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>hip_flexion_l_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>hip_adduction_l_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>hip_rotation_l_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>knee_angle_l_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>ankle_angle_l_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>subtalar_angle_l_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>mtp_angle_l_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>lumbar_extension_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>lumbar_bending_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>lumbar_rotation_moment</load>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>arm_flex_r_moment</load>
 								<is_enabled>false</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>arm_add_r_moment</load>
 								<is_enabled>false</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>arm_rot_r_moment</load>
 								<is_enabled>false</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>elbow_flex_r_moment</load>
 								<is_enabled>false</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>arm_flex_l_moment</load>
 								<is_enabled>false</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>arm_add_l_moment</load>
 								<is_enabled>false</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>arm_rot_l_moment</load>
 								<is_enabled>false</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>inverse_dynamics_load</type>
+								<type>inverse_dynamics_load_tracking</type>
 								<load>elbow_flex_l_moment</load>
 								<is_enabled>false</is_enabled>
 								<max_allowable_error>20</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_force</type>
+								<type>external_force_tracking</type>
 								<force>ground_reaction_force_x</force>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_force</type>
+								<type>external_force_tracking</type>
 								<force>ground_reaction_force_y</force>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_force</type>
+								<type>external_force_tracking</type>
 								<force>ground_reaction_force_z</force>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_force</type>
+								<type>external_force_tracking</type>
 								<force>ground_reaction_force_x1</force>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_force</type>
+								<type>external_force_tracking</type>
 								<force>ground_reaction_force_y1</force>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_force</type>
+								<type>external_force_tracking</type>
 								<force>ground_reaction_force_z1</force>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_moment</type>
+								<type>external_moment_tracking</type>
 								<moment>ground_reaction_moment_x</moment>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_moment</type>
+								<type>external_moment_tracking</type>
 								<moment>ground_reaction_moment_y</moment>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_moment</type>
+								<type>external_moment_tracking</type>
 								<moment>ground_reaction_moment_z</moment>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_moment</type>
+								<type>external_moment_tracking</type>
 								<moment>ground_reaction_moment_x1</moment>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_moment</type>
+								<type>external_moment_tracking</type>
 								<moment>ground_reaction_moment_y1</moment>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>external_moment</type>
+								<type>external_moment_tracking</type>
 								<moment>ground_reaction_moment_z1</moment>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>10</max_allowable_error>
 							</RCNLCostTerm>
-						</objects>
-						<groups />
-					</RCNLCostTermSet>
-				</RCNLTrackingCostTerms>
-				<RCNLMinimizationCostTerms>
-					<RCNLCostTermSet>
-						<objects>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>pelvis_tilt</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>pelvis_list</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>pelvis_rotation</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>pelvis_tx</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>pelvis_ty</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>pelvis_tz</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>hip_flexion_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>hip_adduction_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>hip_rotation_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>knee_angle_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>ankle_angle_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>subtalar_angle_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>mtp_angle_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>hip_flexion_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>hip_adduction_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>hip_rotation_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>knee_angle_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>ankle_angle_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>subtalar_angle_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>mtp_angle_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>lumbar_extension</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>lumbar_bending</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>lumbar_rotation</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>arm_flex_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>arm_add_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>arm_rot_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>elbow_flex_r</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>arm_flex_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>arm_add_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>arm_rot_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
 							<RCNLCostTerm>
-								<type>joint_jerk</type>
+								<type>joint_jerk_minimization</type>
 								<coordinate>elbow_flex_l</coordinate>
 								<is_enabled>true</is_enabled>
 								<max_allowable_error>2</max_allowable_error>
 							</RCNLCostTerm>
-						</objects>
-						<groups />
 					</RCNLCostTermSet>
-				</RCNLMinimizationCostTerms>
-			</objects>
-			<groups />
-		</RCNLContinuousCostTermSet>
 		<RCNLPathConstraintTerms>
 			<RCNLConstraintTermSet>
 				<objects>
@@ -1256,77 +1238,77 @@
 						<min_error>-0.1</min_error>
 					</RCNLConstraintTerm>
 					<RCNLConstraintTerm>
-    					<type>external_force_periodicity</type>
+    					<type>external_force_tracking_periodicity</type>
     					<force>ground_reaction_force_x</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_force_periodicity</type>
+    					<type>external_force_tracking_periodicity</type>
     					<force>ground_reaction_force_y</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_force_periodicity</type>
+    					<type>external_force_tracking_periodicity</type>
     					<force>ground_reaction_force_z</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_force_periodicity</type>
+    					<type>external_force_tracking_periodicity</type>
     					<force>ground_reaction_force_x1</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_force_periodicity</type>
+    					<type>external_force_tracking_periodicity</type>
     					<force>ground_reaction_force_y1</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_force_periodicity</type>
+    					<type>external_force_tracking_periodicity</type>
     					<force>ground_reaction_force_z1</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
 					<RCNLConstraintTerm>
-    					<type>external_moment_periodicity</type>
+    					<type>external_moment_tracking_periodicity</type>
     					<moment>ground_reaction_moment_x</moment>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_moment_periodicity</type>
+    					<type>external_moment_tracking_periodicity</type>
     					<moment>ground_reaction_moment_y</moment>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_moment_periodicity</type>
+    					<type>external_moment_tracking_periodicity</type>
     					<moment>ground_reaction_moment_z</moment>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_moment_periodicity</type>
+    					<type>external_moment_tracking_periodicity</type>
     					<moment>ground_reaction_moment_x1</moment>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_moment_periodicity</type>
+    					<type>external_moment_tracking_periodicity</type>
     					<moment>ground_reaction_moment_y1</moment>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
