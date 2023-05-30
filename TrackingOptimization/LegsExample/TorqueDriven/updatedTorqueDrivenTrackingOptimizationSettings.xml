@@ -1238,77 +1238,77 @@
 						<min_error>-0.1</min_error>
 					</RCNLConstraintTerm>
 					<RCNLConstraintTerm>
-    					<type>external_force_tracking_periodicity</type>
+    					<type>external_force_periodicity</type>
     					<force>ground_reaction_force_x</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_force_tracking_periodicity</type>
+    					<type>external_force_periodicity</type>
     					<force>ground_reaction_force_y</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_force_tracking_periodicity</type>
+    					<type>external_force_periodicity</type>
     					<force>ground_reaction_force_z</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_force_tracking_periodicity</type>
+    					<type>external_force_periodicity</type>
     					<force>ground_reaction_force_x1</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_force_tracking_periodicity</type>
+    					<type>external_force_periodicity</type>
     					<force>ground_reaction_force_y1</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_force_tracking_periodicity</type>
+    					<type>external_force_periodicity</type>
     					<force>ground_reaction_force_z1</force>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
 					<RCNLConstraintTerm>
-    					<type>external_moment_tracking_periodicity</type>
+    					<type>external_moment_periodicity</type>
     					<moment>ground_reaction_moment_x</moment>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_moment_tracking_periodicity</type>
+    					<type>external_moment_periodicity</type>
     					<moment>ground_reaction_moment_y</moment>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_moment_tracking_periodicity</type>
+    					<type>external_moment_periodicity</type>
     					<moment>ground_reaction_moment_z</moment>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_moment_tracking_periodicity</type>
+    					<type>external_moment_periodicity</type>
     					<moment>ground_reaction_moment_x1</moment>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
 						<min_error>-20</min_error>
     				</RCNLConstraintTerm>
     				<RCNLConstraintTerm>
-    					<type>external_moment_tracking_periodicity</type>
+    					<type>external_moment_periodicity</type>
     					<moment>ground_reaction_moment_y1</moment>
     					<is_enabled>true</is_enabled>
     					<max_error>20</max_error>
