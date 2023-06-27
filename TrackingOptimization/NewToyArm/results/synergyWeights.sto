@@ -1,0 +1,7 @@
+DataType=double
+version=3
+OpenSimVersion=4.4-2022-07-23-0e9fedc
+endheader
+time	TRIlat	TRImed	BRA
+1	0.9987564002815474	1	0
+2	0	0	1

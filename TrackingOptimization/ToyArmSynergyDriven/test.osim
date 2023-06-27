@@ -922,14 +922,7 @@
 					<deactivation_time_constant>0.040000000000000001</deactivation_time_constant>
 				</Thelen2003Muscle>
 			</objects>
-			<groups>
-				<ObjectGroup name="triceps">
-					<members>TRIlat TRImed</members>
-				</ObjectGroup>
-				<ObjectGroup name="biceps">
-					<members>BRA</members>
-				</ObjectGroup>
-			</groups>
+			<groups />
 		</ForceSet>
 		<!--Markers in the model.-->
 		<MarkerSet name="markerset">
