@@ -56,7 +56,7 @@
 					<type>joint_jerk_minimization</type>
 					<coordinate>r_elbow_flex</coordinate>
 					<is_enabled>true</is_enabled>
-					<max_allowable_error>2</max_allowable_error>
+					<max_allowable_error>1</max_allowable_error>
 				</RCNLCostTerm>
                 <RCNLCostTerm>
                     <type>user_defined</type>

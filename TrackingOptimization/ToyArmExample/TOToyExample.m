@@ -1,4 +1,4 @@
-clc; clear;
+clc; clear; close all;
 TrackingOptimizationTool("TorqueDrivenTOSettings.xml")
 
 % function output = modifyJointParameter(inputs)
