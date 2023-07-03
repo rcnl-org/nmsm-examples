@@ -20,32 +20,29 @@
 				<marker_file_name>simple_arm.trc</marker_file_name>
                 <!--The set of joints to be optimized in the task-->
                 <JMPJointSet>
-                    <objects>
-				        <!--A joint that will be optimized in the task-->
-				        <JMPJoint name="r_elbow">
-				        	<parent_frame_transformation>
-				        		<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
-				        		<translation>true false false</translation>
-				        		<!--Three boolean values (separated by spaces) for if the joint orientation parameter is to be optimized-->
-				        		<orientation>false false false</orientation>
-				        		<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
-				        		<translation_bounds>0.1</translation_bounds>
-				        		<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-				        		<orientation_bounds>1.0</orientation_bounds>
-				        	</parent_frame_transformation>
-				        	<child_frame_transformation>
-				        		<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
-				        		<translation>false false false</translation>
-				        		<!--Three boolean values (separated by spaces) for if the joint orientation parameter is to be optimized-->
-				        		<orientation>false false false</orientation>
-				        		<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
-				        		<translation_bounds>0.1</translation_bounds>
-				        		<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
-				        		<orientation_bounds>1.0</orientation_bounds>
-				        	</child_frame_transformation>
-				        </JMPJoint>
-                    </objects>
-                    <groups/>
+					<!--A joint that will be optimized in the task-->
+					<JMPJoint name="r_elbow">
+						<parent_frame_transformation>
+							<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
+							<translation>true false false</translation>
+							<!--Three boolean values (separated by spaces) for if the joint orientation parameter is to be optimized-->
+							<orientation>false false false</orientation>
+							<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
+							<translation_bounds>0.1</translation_bounds>
+							<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
+							<orientation_bounds>1.0</orientation_bounds>
+						</parent_frame_transformation>
+						<child_frame_transformation>
+							<!--Three boolean values (separated by spaces) for if the joint translation parameter is to be optimized-->
+							<translation>false false false</translation>
+							<!--Three boolean values (separated by spaces) for if the joint orientation parameter is to be optimized-->
+							<orientation>false false false</orientation>
+							<!-- Translation bounds set the upper and lower limits of the search range around the initial value-->
+							<translation_bounds>0.1</translation_bounds>
+							<!-- Orientation bounds in radians set the upper and lower limits of the search range around the initial value-->
+							<orientation_bounds>1.0</orientation_bounds>
+						</child_frame_transformation>
+					</JMPJoint>
                 </JMPJointSet>
 			</JMPTask>
 		</JMPTaskList>
