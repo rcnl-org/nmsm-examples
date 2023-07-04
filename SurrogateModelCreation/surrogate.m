@@ -26,14 +26,14 @@
 % ----------------------------------------------------------------------- %
 
 %% Required Values
-inputSettings.model = 'exampleModel.osim';
+inputSettings.model = 'simple_arm_muscles.osim';
 inputSettings.dataDirectory = 'preprocessed';
 inputSettings.epsilon = 1e-4;
 inputSettings.polynomialDegree = 5;
 % Indicate 'true' or 'false' for performing latin hyper cube sampling 
 inputSettings.performLatinHyperCubeSampling = 'false';
 % Indicate the coordinates that should be used in the surrogate model
-inputSettings.surrogateModelCoordinateNames = ["hip_adduction_r"];
+inputSettings.surrogateModelCoordinateNames = ["r_elbow_flex"];
 
 % If performLatinHyperCubeSampling is set to true, set the range multiplier
 % and the number of points used for latin hyper cube sampling, otherwise,
@@ -44,7 +44,7 @@ inputSettings.lhsNumPoints = [];
 %% *Optional* Values
 % The trial prefix is the prefix of each output file, identifying the
 % motion such as 'gait' or 'squat' or 'step_up'.
-inputSettings.trialPrefixes = ["gait_1"];
+inputSettings.trialPrefixes = ["trial_1"];
 % Results directory, if blank, results are printed to current directory
 inputSettings.resultsDirectory = [];
 
