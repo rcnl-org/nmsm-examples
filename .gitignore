@@ -11,8 +11,5 @@
 
 *.log
 
-#ignore geometry files
-*.vtp
-
 # ignore DS_Store
 *.DS_Store
