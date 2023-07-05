@@ -15,7 +15,6 @@
 		<initialize_resting_spring_length>true</initialize_resting_spring_length>
 		<!--Settings for ground contact personalization on the right side-->
 		<GCPContactSurfaceSet>
-			<objects>
 				<GCPContactSurface>
 					<!--Flag indicating whether the foot will be personalized-->
 					<is_enabled>true</is_enabled>
@@ -70,8 +69,6 @@
 					<!--Name of midfoot superior marker used to define ground reaction moments-->
 					<midfoot_superior_marker>L.Midfoot.Superior</midfoot_superior_marker>
 				</GCPContactSurface>
-			</objects>
-			<groups />
 		</GCPContactSurfaceSet>
 		<!--Initial values of design variables-->
 		<initial_viscous_friction_coefficient>5</initial_viscous_friction_coefficient>
