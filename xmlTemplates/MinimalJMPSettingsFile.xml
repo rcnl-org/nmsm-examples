@@ -18,7 +18,6 @@
 				<marker_file_name>l_knee.trc</marker_file_name>
                 <!--The set of joints to be optimized in the task-->
                 <JMPJointSet>
-                    <objects>
 				        <!--A joint that will be optimized in the task-->
 				        <JMPJoint name="knee_l">
 				        	<parent_frame_transformation>
@@ -48,12 +47,9 @@
 				        		<orientation>true true false</orientation>
 				        	</child_frame_transformation>
                         </JMPJoint>
-                    </objects>
-                    <groups />
                 </JMPJointSet>
                 <!--The set of bodies to be optimized in the task-->
                 <JMPBodySet>
-                    <objects>
                         <!--A body that will be optimized in the task-->
                         <JMPBody name="femur_l">
                             <!-- boolean value for if the body is to be scaled-->
@@ -67,8 +63,6 @@
                             <!--Three boolean values (separated by spaces) for which axes the markers should be free to move in (x, y, z) order-->
                             <move_markers>true false true</move_markers>
                         </JMPBody>
-                    </objects>
-                    <groups />
 				</JMPBodySet>
 			</JMPTask>
 		</JMPTaskList>

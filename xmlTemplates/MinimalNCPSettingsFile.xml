@@ -23,7 +23,6 @@
         <mtp_results_directory>mtpResults</mtp_results_directory>
 		<!---->
 		<RCNLSynergySet>
-			<objects>
 				<RCNLSynergy>
 					<muscle_group_name>right_side</muscle_group_name>
 					<num_synergies>6</num_synergies>
@@ -32,8 +31,6 @@
 					<muscle_group_name>left_side</muscle_group_name>
 					<num_synergies>6</num_synergies>
 				</Synergy>
-			</objects>
-			<groups />
 		</SynergySet>
 		<!--false if synergies per side are independent of each other; true if synergy vector weights are the same between left and right-->
 		<enforce_bilateral_symmetry>false</enforce_bilateral_symmetry>
