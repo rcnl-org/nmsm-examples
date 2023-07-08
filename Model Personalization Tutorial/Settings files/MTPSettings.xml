@@ -117,7 +117,7 @@
 				<RCNLCostTerm>
 					<type>residual_muscle_activation</type>
 					<is_enabled>true</is_enabled>
-					<max_allowable_error>0.05</max_allowable_error>
+					<max_allowable_error>0.01</max_allowable_error>
 				</RCNLCostTerm>
 			</RCNLCostTermSet>
 		</MTPSynergyExtrapolation>
