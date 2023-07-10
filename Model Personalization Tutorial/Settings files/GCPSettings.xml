@@ -4,19 +4,23 @@
         <!--Directory used for writing results.-->
         <results_directory>gcpResults</results_directory>
 		<!--Name of input .osimx file to append results. Leave empty if an .osimx file has not been written for this model yet. -->
-		<input_osimx_file>ncpResults/UF_Subject_3_reduced_muscles_mtp_ncp.osimx</input_osimx_file>
+		<input_osimx_file>mtpResults/UF_Subject_3_reduced_muscles_mtp.osimx</input_osimx_file>
         <!--Directory for input files-->
         <input_directory>preprocessed</input_directory>
         <!--Name of the input model file (.osim) to use-->
         <input_model_file>UF_Subject_3_reduced_muscles.osim</input_model_file>
-		<!--Name of the input motion file (.mot) to use-->
-        <input_motion_file>IKData/gait_1.mot</input_motion_file>
-		<!--Name of the input ground reaction forces file (.mot) to use-->
-        <input_grf_file>GRFData/gait_1.mot</input_grf_file>
+		<!--Name of the input motion file (.mot or .sto) to use-->
+        <input_motion_file>IKData/gait_1.sto</input_motion_file>
+		<!--Name of the input ground reaction forces file (.mot or .sto) to use-->
+        <input_grf_file>GRFData/gait_1.sto</input_grf_file>
 		<!--Lowpass filter cutoff frequency for kinematic B-splines. A lower frequency may be less precise but converge more quickly.-->
 		<kinematics_filter_cutoff>10</kinematics_filter_cutoff>
 		<!--Flag indicating whether the initial resting spring length will be calibrated before optimization rounds. Recommended true unless the chosen initial value is desired-->
 		<initialize_resting_spring_length>true</initialize_resting_spring_length>
+		<!--Number of spring markers in width of spring marker grid. Default is 5-->
+		<grid_width>5</grid_width>
+		<!--Number of spring markers in height of spring marker grid. Default is 15-->
+		<grid_height>15</grid_height>
 		<!--Settings for ground contact personalization on the right side-->
 		<GCPContactSurfaceSet>
 			<GCPContactSurface>
@@ -29,7 +33,7 @@
 				<!--End time for motion and ground reaction force files-->
 				<end_time>1.6</end_time>
 				<!--Speed of treadmill belt for recorded motion. Set to 0 if not applicable-->
-				<belt_speed>1</belt_speed>
+				<belt_speed>1.4</belt_speed>
 				<!--Names of the force columns in the grf file, ordered X, Y, Z-->
 				<force_columns>ground_force_2_vx ground_force_2_vy ground_force_2_vz</force_columns>
 				<!--Names of the moment columns in the grf file, ordered X, Y, Z-->
