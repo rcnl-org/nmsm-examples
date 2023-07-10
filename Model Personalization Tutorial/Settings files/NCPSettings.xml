@@ -101,7 +101,7 @@
 		<RCNLSynergySet>
 			<RCNLSynergy>
 				<muscle_group_name>RightLeg</muscle_group_name>
-				<num_synergies>6</num_synergies>
+				<num_synergies>3</num_synergies>
 			</RCNLSynergy>
 		</RCNLSynergySet>
 		<RCNLCostTermSet>
