@@ -11,11 +11,11 @@
 %% Preprocessing Script
 
 % All values required
-rawEmgFileName = fullfile("full_input_data", "Full_EMG.mot");
+rawEmgFileName = fullfile("new_motion_data", "Full_EMG.mot");
 filterOrder = 4;
 highPassCutoff = 40;
 lowPassCutoff = 3.5 / 1.1;
-processedEmgFileName = fullfile("full_input_data", "Full_processedEmg.mot");
+processedEmgFileName = fullfile("new_motion_data", "Full_processedEmg.mot");
 
 processRawEmgFile(rawEmgFileName, filterOrder, highPassCutoff, ...
     lowPassCutoff, processedEmgFileName);
@@ -26,8 +26,8 @@ processRawEmgFile(rawEmgFileName, filterOrder, highPassCutoff, ...
 % muscle-tendon length. The file is written in the same directory as the
 % muscle-tendon length file.
 
-muscleTendonLengthFileName = fullfile("full_input_data", ...
-    "MuscleAnalysis", "RCNL_Reduced_Muscles_MuscleAnalysis_Length.sto");
+muscleTendonLengthFileName = fullfile("new_motion_data", ...
+    "MuscleAnalysis", "RCNL_Fullbody_Walking_Model_Reduced_Muscles_MuscleAnalysis_Length.sto");
 cutoffFrequency = 10;
 createMuscleTendonVelocity(muscleTendonLengthFileName, cutoffFrequency);
 
@@ -42,12 +42,12 @@ trialTimePairs = [
 inputSettings.model = "UF_Subject_3_reduced_muscles.osim";
 
 % All values optional: files and directories of data to be split
-inputSettings.ikFileName = fullfile("full_input_data", "IK_results.mot");
-inputSettings.idFileName = fullfile("full_input_data", "ID_results_filtered.sto");
+inputSettings.ikFileName = fullfile("new_motion_data", "GaitTrial48_IKresults.mot");
+inputSettings.idFileName = fullfile("new_motion_data", "GaitTrial48_IDresults_filtered.sto");
 % The emgFileName should be the name of the *processed* emg data file
-inputSettings.emgFileName = fullfile("full_input_data", "Full_processedEmg.mot");
-inputSettings.grfFileName = fullfile("full_input_data", "Forces_ec_filtered.mot");
-inputSettings.maDirectory = fullfile("full_input_data", "MuscleAnalysis");
+inputSettings.emgFileName = fullfile("new_motion_data", "Full_processedEmg.mot");
+inputSettings.grfFileName = fullfile("new_motion_data", "GaitTrial48_forces_ec_reordered.mot");
+inputSettings.maDirectory = fullfile("new_motion_data", "MuscleAnalysisAll");
 
 % All values optional: output information, uses default values otherwise
 outputSettings.resultsDirectory = "preprocessed";
