@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<OpenSimDocument Version="40000">
+<NMSMPipelineDocument Version="1.0.0">
 	<JointModelPersonalizationTool>
 		<!--Directory used for writing results.-->
 		<results_directory/>
@@ -47,4 +47,4 @@
 			</JMPTask>
 		</JMPTaskList>
 	</JointModelPersonalizationTool>
-</OpenSimDocument>
+</NMSMPipelineDocument>
