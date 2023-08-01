@@ -17,7 +17,7 @@
         <!--A space-separated list of the normalized fiber length muscle groups. -->
         <normalized_fiber_length_muscle_groups> HipAdductorsNormalizedFiberLengthGroupR GlutmaxNormalizedFiberLengthGroupR GlutmedNormalizedFiberLengthGroupR GlutminNormalizedFiberLengthGroupR HamsNormalizedFiberLengthGroupR VasNormalizedFiberLengthGroupR GasNormalizedFiberLengthGroupR AnkleInvertorsNormalizedFiberLengthGroupR AnkleEvertorsNormalizedFiberLengthGroupR ToesExtensorsNormalizedFiberLengthGroupR</normalized_fiber_length_muscle_groups>
         <!--A space-separated list of missing EMG channel names.-->
-        <missing_emg_channel_muscle_groups> HipFlexorsMissingEMGChannelGroup HipRotatorsMissingEMGChannelGroupR</missing_emg_channel_muscle_groups>
+        <missing_emg_channel_muscle_groups> HipFlexorsMissingEMGChannelGroupR HipRotatorsMissingEMGChannelGroupR</missing_emg_channel_muscle_groups>
         <!--A space-separated list of collected EMG channel names.-->
         <collected_emg_channel_muscle_groups> AddMag AddLong BicFemLong BicFemShort ExtDigLong ExtHalLong FlexDigLong FlexHalLong GasMed GasLat GlutMaxLat GlutMaxMed GlutMed Gracilis PeroneusLong RecFem Sartorius SemiMemb SemiTend Sol TenFascLat TibAnt TibPost VastInt VastLat VastMed</collected_emg_channel_muscle_groups>
 		<!--*Optional* space-separated list of prefixes to use for data files, if left blank, use all prefixes fron IK folder-->

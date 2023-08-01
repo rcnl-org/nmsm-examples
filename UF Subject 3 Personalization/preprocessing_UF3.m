@@ -39,7 +39,7 @@ trialTimePairs = [
 ];
 
 % Required: Associated .osim model file
-inputSettings.model = "UF_Subject_3_reduced_muscles.osim";
+inputSettings.model = "UF_Subject_3_v8.osim";
 
 % All values optional: files and directories of data to be split
 inputSettings.ikFileName = fullfile("input_data", "GaitTrial48_IKresults.mot");
