@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<OpenSimDocument Version="40000">
+<NMSMPipelineDocument Version="1.0.0">
    <OsimxModel name="optModel">
       <!--Full path of the associated osim model-->
       <associated_osim_model>D:\RCNL\Repositories\nmsm-core\tests\MuscleTendonPersonalization\testXmlParse\optModel_MuscleGroups_LeftMusclesActive_NewSynx.osim</associated_osim_model>
       <!--Optimized muscle parameters-->
-      <MTPMuscleSet>
-         <objects>
+      <RCNLMuscleSet>
             <RCNLMuscle name="addbrev_l">
                <!--Optimized electronmechanical delay-->
                <electromechanical_delay>1.25</electromechanical_delay>
@@ -482,8 +481,6 @@
                <!--Optimized slack tendon length scaling factor-->
                <tendon_slack_length_scale_factor>0.6</tendon_slack_length_scale_factor>
             </RCNLMuscle>
-         </objects>
-         <groups/>
-      </MTPMuscleSet>
+      </RCNLMuscleSet>
    </OsimxModel>
-</OpenSimDocument>
+</NMSMPipelineDocument>

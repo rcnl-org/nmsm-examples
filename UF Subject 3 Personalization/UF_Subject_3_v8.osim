@@ -14999,6 +14999,9 @@
 				<ObjectGroup name="ToesExtensorsNormalizedFiberLengthGroupL">
 					<members> edl_l ehl_l</members>
 				</ObjectGroup>
+				<ObjectGroup name="HipFlexorsMissingEMGChannelGroup">
+					<members> iliacus_r</members>
+				</ObjectGroup>
 			</groups>
 		</ForceSet>
 		<!--Markers in the model.-->

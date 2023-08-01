@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<NMSMPipelineDocument Version="0.1.0">
-    <TrackingOptimizationTool>
+<NMSMPipelineDocument Version="1.0.0">
+    <VerificationOptimizationTool>
         <!--Directory used for writing results.-->
         <results_directory>SynergyDrivenVO</results_directory>
 		<previous_results_directory>SynergyDrivenTO</previous_results_directory>
@@ -25,19 +25,16 @@
 		<!--Name of optimal controls setting file-->
 		<optimal_control_settings_file>gpopsSettings.xml</optimal_control_settings_file>
     	<!--Indicate synergy group names-->
-    	<SynergySet>
-    		<objects>
-    			<Synergy>
+    	<RCNLSynergySet>
+    			<RCNLSynergy>
     				<muscle_group_name>triceps</muscle_group_name>
     				<num_synergies>1</num_synergies>
-    			</Synergy>
-    			<Synergy>
+    			</RCNLSynergy>
+    			<RCNLSynergy>
     				<muscle_group_name>biceps</muscle_group_name>
     				<num_synergies>1</num_synergies>
-    			</Synergy>
-    		</objects>
-    		<groups />
-    	</SynergySet>
+    			</RCNLSynergy>
+    	</RCNLSynergySet>
     	<!--Design variable bounds-->
     	<RCNLDesignVariableBoundsTerms>
     		<joint_positions_multiple>2</joint_positions_multiple>
@@ -100,5 +97,5 @@
         <v_max_factor>10</v_max_factor>
 		<!--*Optional* list prefix of the data file, if left blank, use prefix from IK folder-->
 		<trial_prefixes></trial_prefixes>
-    </TrackingOptimizationTool>
+    </VerificationOptimizationTool>
 </NMSMPipelineDocument>
