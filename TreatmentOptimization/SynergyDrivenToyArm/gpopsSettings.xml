@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<GpopsDocument Version="40000">
+<NMSMPipelineDocument Version="v1.0.1">
     <GpopsSettings>
 		<solver_type>ipopt</solver_type>
 		<!-- -->
@@ -30,4 +30,4 @@
 		<!--*Optional* The bound on the integral of the cost terms, can be increased if the system struggles to converge-->
 		<integral_bound>10</integral_bound>
     </GpopsSettings>
-</GpopsDocument>
+</NMSMPipelineDocument>
