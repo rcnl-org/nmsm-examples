@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <NMSMPipelineDocument Version="1.0.0">
-    <TrackingOptimizationTool>
-        <!--Directory used for writing results.-->
-        <results_directory>TorqueDrivenTO</results_directory>
-        <!--Directory for input files-->
-        <data_directory>preprocessed</data_directory>
-        <!--Name of the input model file (.osim) to use-->
-        <input_model_file>simple_arm.osim</input_model_file>
-        <!--Name of the osimx model file-->
-        <input_osimx_file />
-        <!--Name of optimal controls setting file-->
-        <optimal_control_solver_settings_file>gpopsSettings.xml</optimal_control_solver_settings_file>
-        <!--*Optional* list prefix of the data file, if left blank, use prefix from IK folder-->
-        <trial_prefix />
-        <!--Torque Driven Optimal Control problem settings-->
-        <RCNLTorqueController>
-            <!--*Optional* Name of the initial states guess file-->
-            <initial_states_file />
-            <!--*Optional* Name of the initial controls guess file-->
-            <initial_torque_controls_file />
-            <!--Indicate the coordinates with torque controllers-->
-            <torque_controller_coordinate_list>r_elbow_flex</torque_controller_coordinate_list>
-            <joint_positions_multiple>2</joint_positions_multiple>
-            <joint_velocities_multiple>1.5</joint_velocities_multiple>
-            <joint_accelerations_multiple>1</joint_accelerations_multiple>
-            <joint_jerks_multiple>1</joint_jerks_multiple>
-            <torque_controls_max>2</torque_controls_max>
-        </RCNLTorqueController>
+	<TrackingOptimizationTool>
+		<!--Directory used for writing results.-->
+		<results_directory>TorqueDrivenTO</results_directory>
+		<!--Directory for input files-->
+		<data_directory>preprocessed</data_directory>
+		<!--Name of the input model file (.osim) to use-->
+		<input_model_file>simple_arm.osim</input_model_file>
+		<!--Name of the osimx model file-->
+		<input_osimx_file/>
+		<!--Name of optimal controls setting file-->
+		<optimal_control_solver_settings_file>gpopsSettings.xml</optimal_control_solver_settings_file>
+		<!--*Optional* list prefix of the data file, if left blank, use prefix from IK folder-->
+		<trial_prefix/>
+		<!--Torque Driven Optimal Control problem settings-->
+		<RCNLController>
+			<!--*Optional* Name of the initial states guess file-->
+			<initial_states_file/>
+			<!--The list of coordinates to be included in the state, coordinates excluded will not change from their IK values-->
+			<states_coordinate_list></states_coordinate_list>
+			<joint_positions_multiple>2</joint_positions_multiple>
+			<joint_velocities_multiple>1.5</joint_velocities_multiple>
+			<joint_accelerations_multiple>1</joint_accelerations_multiple>
+			<joint_jerks_multiple>1</joint_jerks_multiple>
+			<RCNLTorqueController>
+				<!--*Optional* Name of the initial controls guess file-->
+				<initial_torque_controls_file/>
+				<torque_controls_max>2</torque_controls_max>
+			</RCNLTorqueController>
+		</RCNLController>
 		<RCNLCostTermSet>
 			<RCNLCostTerm>
 				<type>coordinate_tracking</type>
@@ -44,7 +46,7 @@
 				<type>joint_jerk_minimization</type>
 				<coordinate>r_elbow_flex</coordinate>
 				<is_enabled>true</is_enabled>
-				<max_allowable_error>200</max_allowable_error>
+				<max_allowable_error>20</max_allowable_error>
 			</RCNLCostTerm>
 		</RCNLCostTermSet>
 		<RCNLConstraintTermSet>
@@ -56,5 +58,5 @@
 				<min_error>-0.1</min_error>
 			</RCNLConstraintTerm>
 		</RCNLConstraintTermSet>
-    </TrackingOptimizationTool>
+	</TrackingOptimizationTool>
 </NMSMPipelineDocument>
