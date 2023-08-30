@@ -19,10 +19,10 @@
 			<initial_states_file/>
 			<!--The list of coordinates to be included in the state, coordinates excluded will not change from their IK values-->
 			<states_coordinate_list>r_elbow_flex</states_coordinate_list>
-			<joint_positions_multiple>2</joint_positions_multiple>
-			<joint_velocities_multiple>1.5</joint_velocities_multiple>
-			<joint_accelerations_multiple>1</joint_accelerations_multiple>
-			<joint_jerks_multiple>1</joint_jerks_multiple>
+			<joint_position_range_scale_factor>2</joint_position_range_scale_factor>
+			<joint_velocity_range_scale_factor>1.5</joint_velocity_range_scale_factor>
+			<joint_acceleration_range_scale_factor>1</joint_acceleration_range_scale_factor>
+			<joint_jerk_range_scale_factor>1</joint_jerk_range_scale_factor>
 			<RCNLTorqueController>
 				<!--*Optional* Name of the initial controls guess file-->
 				<initial_torque_controls_file/>
