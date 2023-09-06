@@ -1,7 +1,7 @@
 
 clc; clear; close all;
-TrackingOptimizationTool("SynergyDrivenTrackingOptimizationSettings.xml");
+% TrackingOptimizationTool("SynergyDrivenTrackingOptimizationSettings.xml");
 
-% VerificationOptimizationTool("SynergyDrivenVerificationOptimizationSettings.xml");
+VerificationOptimizationTool("SynergyDrivenVerificationOptimizationSettings.xml");
 
 % DesignOptimizationTool("SynergyDrivenDesignOptimizationSettings.xml");

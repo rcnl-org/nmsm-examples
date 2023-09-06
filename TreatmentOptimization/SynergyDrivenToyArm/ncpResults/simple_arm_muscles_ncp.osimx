@@ -29,5 +29,20 @@
             <max_isometric_force>987.26</max_isometric_force>
          </RCNLMuscle>
       </RCNLMuscleSet>
+      <!--The set of synergies from NCP to find the values in this osimx file-->
+      <RCNLSynergySet>
+         <RCNLSynergy>
+            <!--The name of the muscle group associated with this synergy-->
+            <muscle_group_name>triceps</muscle_group_name>
+            <!--The number of synergies used by this synergy group-->
+            <num_synergies>1</num_synergies>
+         </RCNLSynergy>
+         <RCNLSynergy>
+            <!--The name of the muscle group associated with this synergy-->
+            <muscle_group_name>biceps</muscle_group_name>
+            <!--The number of synergies used by this synergy group-->
+            <num_synergies>1</num_synergies>
+         </RCNLSynergy>
+      </RCNLSynergySet>
    </OsimxModel>
 </NMSMPipelineDocument>
