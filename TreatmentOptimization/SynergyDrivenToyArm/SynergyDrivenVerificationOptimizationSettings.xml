@@ -11,10 +11,6 @@
 		<input_model_file>simple_arm_muscles.osim</input_model_file>
 		<!--Name of the osimx model file-->
 		<input_osimx_file>ncpResults/simple_arm_muscles_ncp.osimx</input_osimx_file>
-		<!--Indicate the surrogate model coordinates-->
-		<coordinate_list>r_elbow_flex</coordinate_list>
-		<!--Name of the surrogate model coefficients file-->
-		<surrogate_model_coefficients>coefficients.mat</surrogate_model_coefficients>
 		<!--Name of optimal controls setting file-->
 		<optimal_control_solver_settings_file>gpopsSettings.xml</optimal_control_solver_settings_file>
 		<!--name, excluding file type (.sto, .mot, etc), of the trial-->
