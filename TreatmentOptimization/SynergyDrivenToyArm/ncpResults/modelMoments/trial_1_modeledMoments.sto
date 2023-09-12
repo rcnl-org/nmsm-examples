@@ -2,7 +2,7 @@ DataType=double
 version=3
 OpenSimVersion=4.4-2022-07-23-0e9fedc
 endheader
-time	r_elbow_flex
+time	r_elbow_flex_moment
 0.31666643	1.149851479562576
 0.33333309	1.192489979220803
 0.34999975	1.235807610592718
