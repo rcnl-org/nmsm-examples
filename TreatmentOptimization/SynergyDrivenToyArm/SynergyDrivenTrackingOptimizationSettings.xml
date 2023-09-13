@@ -15,34 +15,28 @@
 		<!--name, excluding file type (.sto, .mot, etc), of the trial-->
 		<trial_name>trial_1</trial_name>
 		<!--Synergy Driven Optimal Control problem settings-->
-		<RCNLController>
-			<!--*Optional* Name of the initial states guess file-->
-			<initial_states_file/>
-			<!--The list of coordinates to be included in the state, coordinates excluded will not change from their IK values-->
-			<states_coordinate_list>r_elbow_flex</states_coordinate_list>
-			<joint_position_range_scale_factor>2</joint_position_range_scale_factor>
-			<joint_velocity_range_scale_factor>1.5</joint_velocity_range_scale_factor>
-			<joint_acceleration_range_scale_factor>1</joint_acceleration_range_scale_factor>
-			<joint_jerk_range_scale_factor>1</joint_jerk_range_scale_factor>
-			<RCNLSynergyController>
-				<!-- Name of the initial activations guess file -->
-				<activations_file/>
-				<!--*Optional* Name of the initial controls guess file-->
-				<initial_synergy_controls_file/>
-				<!--*Optional* Name of the initial parameters guess file-->
-				<initial_synergy_vectors_file/>
-				<!--Indicate if synergy vectors should be optimized-->
-				<optimize_synergy_vectors>false</optimize_synergy_vectors>
-				<!--Indicate the surrogate model coordinates-->
-				<maximum_allowable_synergy_activation>10</maximum_allowable_synergy_activation>
-				<maximum_allowable_synergy_vector_weight>2</maximum_allowable_synergy_vector_weight>
-				<!--Epsilon-->
-				<epsilon>1e-4</epsilon>
-				<!--*Optional* Value to be multiplied by the optimal fiber length for maximum shortening velocity calculation -->
-				<maximum_shortening_velocity_multiplier>10</maximum_shortening_velocity_multiplier>
-				<surrogate_model_coefficients>coefficients.mat</surrogate_model_coefficients>
-			</RCNLSynergyController>
-		</RCNLController>
+        <states_coordinate_list>r_elbow_flex</states_coordinate_list>
+        <joint_position_range_scale_factor>2</joint_position_range_scale_factor>
+        <joint_velocity_range_scale_factor>1.5</joint_velocity_range_scale_factor>
+        <joint_acceleration_range_scale_factor>1</joint_acceleration_range_scale_factor>
+        <joint_jerk_range_scale_factor>1</joint_jerk_range_scale_factor>
+		<RCNLTorqueController>
+            <!--List of coordinates with torque controllers-->
+			<coordinate_list>r_elbow_flex</coordinate_list>
+			<controls_range_scale_factor>2</controls_range_scale_factor>
+		</RCNLTorqueController>
+		<RCNLSynergyController>
+			<!--Indicate if synergy vectors should be optimized-->
+			<optimize_synergy_vectors>false</optimize_synergy_vectors>
+			<!--Indicate the surrogate model coordinates-->
+			<maximum_allowable_synergy_activation>10</maximum_allowable_synergy_activation>
+			<maximum_allowable_synergy_vector_weight>2</maximum_allowable_synergy_vector_weight>
+			<!--Epsilon-->
+			<epsilon>1e-4</epsilon>
+			<!--*Optional* Value to be multiplied by the optimal fiber length for maximum shortening velocity calculation -->
+			<maximum_shortening_velocity_multiplier>10</maximum_shortening_velocity_multiplier>
+			<surrogate_model_coefficients>coefficients.mat</surrogate_model_coefficients>
+		</RCNLSynergyController>
 		<RCNLCostTermSet>
 			<RCNLCostTerm>
 				<type>coordinate_tracking</type>
