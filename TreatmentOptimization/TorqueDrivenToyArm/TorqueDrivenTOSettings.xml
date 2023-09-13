@@ -14,22 +14,16 @@
 		<!--*Optional* list prefix of the data file, if left blank, use prefix from IK folder-->
 		<trial_name>arm1</trial_name>
 		<!--Torque Driven Optimal Control problem settings-->
-		<RCNLController>
-			<!--*Optional* Name of the initial states guess file-->
-			<initial_states_file/>
-			<!--The list of coordinates to be included in the state, coordinates excluded will not change from their IK values-->
-			<states_coordinate_list>r_elbow_flex</states_coordinate_list>
-			<joint_position_range_scale_factor>2</joint_position_range_scale_factor>
-			<joint_velocity_range_scale_factor>1.5</joint_velocity_range_scale_factor>
-			<joint_acceleration_range_scale_factor>1</joint_acceleration_range_scale_factor>
-			<joint_jerk_range_scale_factor>1</joint_jerk_range_scale_factor>
-			<RCNLTorqueController>
-				<!--*Optional* Name of the initial controls guess file-->
-				<initial_torque_controls_file/>
-				<torque_controller_coordinate_list>r_elbow_flex</torque_controller_coordinate_list>
-				<torque_controls_range_scale_factor>2</torque_controls_range_scale_factor>
-			</RCNLTorqueController>
-		</RCNLController>
+		<!--The list of coordinates to be included in the state, coordinates excluded will not change from their IK values-->
+		<states_coordinate_list>r_elbow_flex</states_coordinate_list>
+		<joint_position_range_scale_factor>2</joint_position_range_scale_factor>
+		<joint_velocity_range_scale_factor>1.5</joint_velocity_range_scale_factor>
+		<joint_acceleration_range_scale_factor>1</joint_acceleration_range_scale_factor>
+		<joint_jerk_range_scale_factor>1</joint_jerk_range_scale_factor>
+		<RCNLTorqueController>
+			<coordinate_list>r_elbow_flex</coordinate_list>
+			<torque_controls_range_scale_factor>2</torque_controls_range_scale_factor>
+		</RCNLTorqueController>
 		<RCNLCostTermSet>
 			<RCNLCostTerm>
 				<type>coordinate_tracking</type>
