@@ -11,6 +11,7 @@
 		<input_osimx_file/>
 		<!--Name of optimal controls setting file-->
 		<optimal_control_solver_settings_file>gpopsSettings.xml</optimal_control_solver_settings_file>
+		<experimental_spline_cutoff_frequency>4</experimental_spline_cutoff_frequency>
 		<!--*Optional* list prefix of the data file, if left blank, use prefix from IK folder-->
 		<trial_name>arm1</trial_name>
 		<!--Torque Driven Optimal Control problem settings-->

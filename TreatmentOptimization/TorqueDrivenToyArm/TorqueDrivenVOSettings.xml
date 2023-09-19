@@ -12,6 +12,7 @@
 		<input_osimx_file/>
 		<!--Name of optimal controls setting file-->
 		<optimal_control_solver_settings_file>gpopsSettings.xml</optimal_control_solver_settings_file>
+		<experimental_spline_cutoff_frequency>4</experimental_spline_cutoff_frequency>
 		<!--*Optional* list prefix of the data file, if left blank, use prefix from IK folder-->
 		<trial_name>arm1</trial_name>
 		<!--The list of coordinates to be included in the state, coordinates excluded will not change from their IK values-->
@@ -28,14 +29,14 @@
 			<RCNLCostTerm>
 				<type>coordinate_tracking</type>
 				<coordinate>r_elbow_flex</coordinate>
-				<is_enabled>true</is_enabled>
+				<is_enabled>false</is_enabled>
 				<max_allowable_error>10</max_allowable_error>
 			</RCNLCostTerm>
 			<RCNLCostTerm>
 				<type>controller_tracking</type>
 				<controller>r_elbow_flex_moment</controller>
 				<is_enabled>true</is_enabled>
-				<max_allowable_error>1</max_allowable_error>
+				<max_allowable_error>0.01</max_allowable_error>
 			</RCNLCostTerm>
 			<RCNLCostTerm>
 				<type>joint_jerk_minimization</type>
