@@ -33,6 +33,13 @@
 				<lower_bounds>-0.1</lower_bounds>
 				<is_enabled>true</is_enabled>
 			</RCNLParameterTerm>
+			<RCNLParameterTerm>
+				<type>elbow_orientation</type>
+				<initial_values>0.0 0.0</initial_values>
+				<upper_bounds>0.1 0.1</upper_bounds>
+				<lower_bounds>-0.1 -0.1</lower_bounds>
+				<is_enabled>true</is_enabled>
+			</RCNLParameterTerm>
 		</RCNLParameterTermSet>
 		<RCNLCostTermSet>
 			<RCNLCostTerm>
