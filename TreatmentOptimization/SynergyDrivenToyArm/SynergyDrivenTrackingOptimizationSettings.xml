@@ -22,10 +22,9 @@
         <joint_jerk_range_scale_factor>1</joint_jerk_range_scale_factor>
 		<RCNLSynergyController>
 			<!--Indicate if synergy vectors should be optimized-->
-			<optimize_synergy_vectors>false</optimize_synergy_vectors>
+			<optimize_synergy_vectors>true</optimize_synergy_vectors>
 			<!--Indicate the surrogate model coordinates-->
 			<maximum_allowable_synergy_activation>10</maximum_allowable_synergy_activation>
-			<maximum_allowable_synergy_vector_weight>2</maximum_allowable_synergy_vector_weight>
 			<!--Epsilon-->
 			<epsilon>1e-4</epsilon>
 			<!--*Optional* Value to be multiplied by the optimal fiber length for maximum shortening velocity calculation -->
@@ -72,11 +71,25 @@
 		</RCNLCostTermSet>
 		<RCNLConstraintTermSet>
 			<RCNLConstraintTerm>
-				<type>muscle_model_moment_consistency</type>
+				<type>state_control_consistency</type>
 				<load>r_elbow_flex_moment</load>
 				<is_enabled>true</is_enabled>
 				<max_error>0.1</max_error>
 				<min_error>-0.1</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm>
+				<type>synergy_weight_sum</type>
+				<synergy_group>triceps</synergy_group>
+				<is_enabled>true</is_enabled>
+				<max_error>1</max_error>
+				<min_error>1</min_error>
+			</RCNLConstraintTerm>
+			<RCNLConstraintTerm>
+				<type>synergy_weight_sum</type>
+				<synergy_group>biceps</synergy_group>
+				<is_enabled>true</is_enabled>
+				<max_error>1</max_error>
+				<min_error>1</min_error>
 			</RCNLConstraintTerm>
 		</RCNLConstraintTermSet>
 	</TrackingOptimizationTool>
