@@ -20,6 +20,7 @@
 		<joint_velocity_range_scale_factor>1.5</joint_velocity_range_scale_factor>
 		<joint_acceleration_range_scale_factor>1</joint_acceleration_range_scale_factor>
 		<joint_jerk_range_scale_factor>1</joint_jerk_range_scale_factor>
+		<final_time_range>0.5</final_time_range>
 		<RCNLTorqueController>
 			<coordinate_list>r_elbow_flex</coordinate_list>
 			<torque_controls_range_scale_factor>2</torque_controls_range_scale_factor>
