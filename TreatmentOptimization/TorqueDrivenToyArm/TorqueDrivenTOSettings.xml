@@ -27,6 +27,12 @@
 		</RCNLTorqueController>
 		<RCNLCostTermSet>
 			<RCNLCostTerm>
+				<type>marker_position_tracking</type>
+				<marker>r_radius3</marker>
+				<is_enabled>true</is_enabled>
+				<max_allowable_error>0.01</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm>
 				<type>generalized_coordinate_tracking</type>
 				<coordinate>r_elbow_flex</coordinate>
 				<is_enabled>true</is_enabled>
