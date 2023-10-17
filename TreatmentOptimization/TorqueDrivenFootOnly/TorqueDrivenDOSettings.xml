@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NMSMPipelineDocument Version="1.0.0">
+	<DesignOptimizationTool>
+		<!--Directory used for writing results.-->
+		<results_directory>TorqueDrivenDO</results_directory>
+		<previous_results_directory>TorqueDrivenVO</previous_results_directory>
+		<!--Directory for input files-->
+		<data_directory>preprocessed</data_directory>
+		<!--Name of the input model file (.osim) to use-->
+		<input_model_file>simple_arm_translated_away.osim</input_model_file>
+		<!--Name of the osimx model file-->
+		<input_osimx_file/>
+		<!--Name of optimal controls setting file-->
+		<optimal_control_solver_settings_file>gpopsSettings.xml</optimal_control_solver_settings_file>
+		<!--*Optional* list prefix of the data file, if left blank, use prefix from IK folder-->
+		<trial_name>arm1</trial_name>
+		<!--The list of coordinates to be included in the state, coordinates excluded will not change from their IK values-->
+		<states_coordinate_list>r_elbow_flex</states_coordinate_list>
+		<joint_position_range_scale_factor>2</joint_position_range_scale_factor>
+		<joint_velocity_range_scale_factor>1.5</joint_velocity_range_scale_factor>
+		<joint_acceleration_range_scale_factor>1</joint_acceleration_range_scale_factor>
+		<joint_jerk_range_scale_factor>1</joint_jerk_range_scale_factor>
+		<final_time_range>0.5</final_time_range>
+		<RCNLTorqueController>
+			<coordinate_list>r_elbow_flex</coordinate_list>
+			<torque_controls_range_scale_factor>2</torque_controls_range_scale_factor>
+		</RCNLTorqueController>
+		<model_functions>applyJointParameter</model_functions>
+		<RCNLParameterTermSet>
+			<RCNLParameterTerm>
+				<type>elbow_translation</type>
+				<initial_values>0.01</initial_values>
+				<upper_bounds>0.1</upper_bounds>
+				<lower_bounds>-0.1</lower_bounds>
+				<is_enabled>true</is_enabled>
+			</RCNLParameterTerm>
+			<RCNLParameterTerm>
+				<type>elbow_orientation</type>
+				<initial_values>0.0 0.0</initial_values>
+				<upper_bounds>0.1 0.1</upper_bounds>
+				<lower_bounds>-0.1 -0.1</lower_bounds>
+				<is_enabled>true</is_enabled>
+			</RCNLParameterTerm>
+		</RCNLParameterTermSet>
+		<RCNLCostTermSet>
+			<RCNLCostTerm>
+				<type>generalized_coordinate_tracking</type>
+				<coordinate>r_elbow_flex</coordinate>
+				<is_enabled>true</is_enabled>
+				<max_allowable_error>10</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm>
+				<type>controller_tracking</type>
+				<controller>r_elbow_flex_moment</controller>
+				<is_enabled>true</is_enabled>
+				<max_allowable_error>1</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm>
+				<type>joint_jerk_minimization</type>
+				<coordinate>r_elbow_flex</coordinate>
+				<is_enabled>true</is_enabled>
+				<max_allowable_error>1</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm>
+				<type>user_defined</type>
+				<function_name>jointParameterCost</function_name>
+				<cost_term_type>discrete</cost_term_type>
+				<is_enabled>true</is_enabled>
+			</RCNLCostTerm>
+		</RCNLCostTermSet>
+		<RCNLConstraintTermSet>
+			<RCNLConstraintTerm>
+				<type>kinetic_consistency</type>
+				<load>r_elbow_flex_moment</load>
+				<is_enabled>true</is_enabled>
+				<max_error>0.1</max_error>
+				<min_error>-0.1</min_error>
+			</RCNLConstraintTerm>
+		</RCNLConstraintTermSet>
+	</DesignOptimizationTool>
+</NMSMPipelineDocument>
