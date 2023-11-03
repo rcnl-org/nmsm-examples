@@ -34,18 +34,6 @@
 		</RCNLSynergyController>
 		<RCNLCostTermSet>
 			<RCNLCostTerm>
-				<type>marker_position_tracking</type>
-				<marker>R.Midfoot.Superior</marker>
-				<is_enabled>true</is_enabled>
-				<max_allowable_error>0.01</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm>
-				<type>marker_position_tracking</type>
-				<marker>L.Midfoot.Superior</marker>
-				<is_enabled>true</is_enabled>
-				<max_allowable_error>0.01</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm>
 				<type>generalized_coordinate_tracking</type>
 				<coordinate>hip_flexion_r</coordinate>
 				<is_enabled>true</is_enabled>
