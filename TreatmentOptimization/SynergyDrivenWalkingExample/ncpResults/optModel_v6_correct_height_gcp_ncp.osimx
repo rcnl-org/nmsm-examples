@@ -562,7 +562,7 @@
             <!--Names of the electrical center columns in the grf file, ordered X, Y, Z-->
             <electrical_center_columns>EC2x EC2y EC2z</electrical_center_columns>
             <!--Name of the toe angle coordinate in the model file-->
-            <toes_coordinate>mtp_angle_r</toes_coordinate>
+            <hindfoot_body>calcn_r</hindfoot_body>
             <!--Name of the toe joint in the model file-->
             <toes_joint>mtp_r</toes_joint>
             <!--Names of the markers used to define the foot area-->
@@ -1038,7 +1038,7 @@
             <!--Names of the electrical center columns in the grf file, ordered X, Y, Z-->
             <electrical_center_columns>EC1x EC1y EC1z</electrical_center_columns>
             <!--Name of the toe angle coordinate in the model file-->
-            <toes_coordinate>mtp_angle_l</toes_coordinate>
+            <hindfoot_body>calcn_l</hindfoot_body>
             <!--Name of the toe joint in the model file-->
             <toes_joint>mtp_l</toes_joint>
             <!--Names of the markers used to define the foot area-->
