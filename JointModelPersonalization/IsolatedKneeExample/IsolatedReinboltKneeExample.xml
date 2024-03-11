@@ -95,6 +95,6 @@
 		<!--*Optional* The step tolerance determines when the lsqnonlin algorithm stops. The larger it is, the earlier the algorithm stops, but with lower accuracy-->
 		<step_tolerance>1e-06</step_tolerance>
 		<!--*Optional* The number of allowed iterations for the lsqnonlin, setting this lower can help cancel an optimization that won't converge-->
-		<max_function_evaluations>3e3</max_function_evaluations>
+		<max_function_evaluations>1</max_function_evaluations>
 	</JointModelPersonalizationTool>
 </NMSMPipelineDocument>

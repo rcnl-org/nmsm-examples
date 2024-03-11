@@ -25,7 +25,8 @@
 settingsFileName = 'IsolatedReinboltKneeExample.xml';
 settingsTree = xml2struct(settingsFileName);
 [outputFile, inputs, params] = parseJointModelPersonalizationSettingsTree(settingsTree);
-JointModelPersonalization(inputs, params);
+model = JointModelPersonalization(inputs, params);
+model.print("Rajagopal_4.0_RCNL_markers_scaled_knee.osim");
 
 jointArray = {"knee_l"};
 markerFile = "l_knee.trc";

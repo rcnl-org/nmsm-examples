@@ -22,7 +22,6 @@
 		<joint_position_range_scale_factor>2</joint_position_range_scale_factor>
 		<joint_velocity_range_scale_factor>1.5</joint_velocity_range_scale_factor>
 		<joint_acceleration_range_scale_factor>1</joint_acceleration_range_scale_factor>
-		<joint_jerk_range_scale_factor>1</joint_jerk_range_scale_factor>
 		<RCNLSynergyController>
 			<!--Indicate if synergy vectors should be optimized-->
 			<optimize_synergy_vectors>true</optimize_synergy_vectors>
@@ -32,7 +31,7 @@
 			<epsilon>1e-4</epsilon>
 			<!--*Optional* Value to be multiplied by the optimal fiber length for maximum shortening velocity calculation -->
 			<maximum_shortening_velocity_multiplier>10</maximum_shortening_velocity_multiplier>
-			<surrogate_model_coefficients>coefficients.mat</surrogate_model_coefficients>
+			<surrogate_model_coordinate_list>r_elbow_flex</surrogate_model_coordinate_list>
 		</RCNLSynergyController>
 		<model_functions/>
 		<RCNLParameterTermSet/>
@@ -54,12 +53,6 @@
 				<controller>biceps_1</controller>
 				<is_enabled>true</is_enabled>
 				<max_allowable_error>0.05</max_allowable_error>
-			</RCNLCostTerm>
-			<RCNLCostTerm>
-				<type>joint_jerk_minimization</type>
-				<coordinate>r_elbow_flex</coordinate>
-				<is_enabled>true</is_enabled>
-				<max_allowable_error>10</max_allowable_error>
 			</RCNLCostTerm>
 		</RCNLCostTermSet>
 		<RCNLConstraintTermSet>
