@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<NMSMPipelineDocument Version="1.1.0">
+<NMSMPipelineDocument Version="1.0.0">
    <OsimxModel name="optModel">
       <!--Full path of the associated osim model-->
       <associated_osim_model>D:\RCNL\Repositories\nmsm-core\tests\MuscleTendonPersonalization\testXmlParse\optModel_MuscleGroups_LeftMusclesActive_NewSynx.osim</associated_osim_model>
