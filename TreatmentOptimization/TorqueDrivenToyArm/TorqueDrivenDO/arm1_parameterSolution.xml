@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NMSMPipelineDocument>
+   <RCNLParameters>
+      <RCNLParameterSet>
+         <type>elbow_translation</type>
+         <values>0.0061</values>
+      </RCNLParameterSet>
+   </RCNLParameters>
+   <RCNLParameters>
+      <RCNLParameterSet>
+         <type>elbow_orientation</type>
+         <values>0 0</values>
+      </RCNLParameterSet>
+   </RCNLParameters>
+</NMSMPipelineDocument>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NMSMPipelineDocument Version="0.1.0">
+   <OsimxModel name="simple_arm_muscles">
+      <!--File name of associated .osim file-->
+      <associated_osim_model/>
+      <RCNLMuscleSet>
+         <RCNLMuscle name="TRIlat">
+         <!--Optimized optimal fiber length-->
+         <optimal_fiber_length>0.146560535582273</optimal_fiber_length>
+            <!--Optimized tendon slack length-->
+            <tendon_slack_length>0.0738733457995124</tendon_slack_length>
+            <!--Optimized max isometric force-->
+            <max_isometric_force>541.450180412217</max_isometric_force>
+         </RCNLMuscle>
+         <RCNLMuscle name="TRImed">
+         <!--Optimized optimal fiber length-->
+         <optimal_fiber_length>0.1138</optimal_fiber_length>
+            <!--Optimized tendon slack length-->
+            <tendon_slack_length>0.0908</tendon_slack_length>
+            <!--Optimized max isometric force-->
+            <max_isometric_force>624.3</max_isometric_force>
+         </RCNLMuscle>
+         <RCNLMuscle name="BRA">
+         <!--Optimized optimal fiber length-->
+         <optimal_fiber_length>0.0858</optimal_fiber_length>
+            <!--Optimized tendon slack length-->
+            <tendon_slack_length>0.0535</tendon_slack_length>
+            <!--Optimized max isometric force-->
+            <max_isometric_force>987.26</max_isometric_force>
+         </RCNLMuscle>
+      </RCNLMuscleSet>
+            <!--The set of synergies from NCP to find the values in this osimx file-->
+            <RCNLSynergySet>
+         <RCNLSynergy>
+         <!--The name of the muscle group associated with this synergy-->
+         <muscle_group_name>triceps</muscle_group_name>
+            <!--The number of synergies used by this synergy group-->
+            <num_synergies>1</num_synergies>
+         </RCNLSynergy>
+         <RCNLSynergy>
+         <!--The name of the muscle group associated with this synergy-->
+         <muscle_group_name>biceps</muscle_group_name>
+            <!--The number of synergies used by this synergy group-->
+            <num_synergies>1</num_synergies>
+         </RCNLSynergy>
+      </RCNLSynergySet>
+   </OsimxModel>
+</NMSMPipelineDocument>

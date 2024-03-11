@@ -1,75 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<NMSMPipelineDocument Version="1.0.0">
-    <TrackingOptimizationTool>
-        <!--Directory used for writing results.-->
-        <results_directory>TorqueDrivenTO</results_directory>
-        <!--Directory for input files-->
-        <data_directory>preprocessed</data_directory>
-        <!--Name of the input model file (.osim) to use-->
-        <input_model_file>simple_arm.osim</input_model_file>
-    	<!--*Optional* Name of the initial states guess file-->
-    	<initial_states_file />
-    	<!--*Optional* Name of the initial controls guess file-->
-    	<initial_controls_file />
-    	<!--Indicate the name of the type of controller: synergy driven or torque driven-->
-    	<type_of_controller>torque_driven</type_of_controller>
-    	<!--Indicate if synergy vectors should be optimized-->
-    	<optimize_synergy_vectors>false</optimize_synergy_vectors>
-    	<!--Name of the osimx model file-->
-    	<osimx_file />
-    	<!--Indicate the coordinates with torque controllers-->
-    	<coordinate_list>r_elbow_flex</coordinate_list>
+<NMSMPipelineDocument Version="1.1.0">
+	<TrackingOptimizationTool>
+		<!--Directory used for writing results.-->
+		<results_directory>TorqueDrivenTO</results_directory>
+		<!--Directory for input files-->
+		<data_directory>preprocessed</data_directory>
+		<!--Name of the input model file (.osim) to use-->
+		<input_model_file>simple_arm.osim</input_model_file>
+		<!--Name of the osimx model file-->
+		<input_osimx_file/>
 		<!--Name of optimal controls setting file-->
-		<optimal_control_settings_file>gpopsSettings.xml</optimal_control_settings_file>
-    	<!--Design variable bounds-->
-    	<RCNLDesignVariableBoundsTerms>
-    		<joint_positions_multiple>2</joint_positions_multiple>
-    		<joint_velocities_multiple>1.5</joint_velocities_multiple>
-    		<joint_accelerations_multiple>1</joint_accelerations_multiple>
-    		<joint_jerks_multiple>1</joint_jerks_multiple>
-    		<torque_controls_max>2</torque_controls_max>
-    	</RCNLDesignVariableBoundsTerms>
+		<optimal_control_solver_settings_file>gpopsSettings.xml</optimal_control_solver_settings_file>
+		<experimental_spline_cutoff_frequency>4</experimental_spline_cutoff_frequency>
+		<!--*Optional* list prefix of the data file, if left blank, use prefix from IK folder-->
+		<trial_name>arm1</trial_name>
+		<!--Torque Driven Optimal Control problem settings-->
+		<!--The list of coordinates to be included in the state, coordinates excluded will not change from their IK values-->
+		<states_coordinate_list>r_elbow_flex</states_coordinate_list>
+		<joint_position_range_scale_factor>2</joint_position_range_scale_factor>
+		<joint_velocity_range_scale_factor>1.5</joint_velocity_range_scale_factor>
+		<joint_acceleration_range_scale_factor>1</joint_acceleration_range_scale_factor>
+		<joint_jerk_range_scale_factor>1</joint_jerk_range_scale_factor>
+		<RCNLTorqueController>
+			<coordinate_list>r_elbow_flex</coordinate_list>
+			<torque_controls_range_scale_factor>2</torque_controls_range_scale_factor>
+		</RCNLTorqueController>
 		<RCNLCostTermSet>
 			<RCNLCostTerm>
-				<type>coordinate_tracking</type>
+				<type>marker_position_tracking</type>
+				<marker>r_radius3</marker>
+				<is_enabled>true</is_enabled>
+				<max_allowable_error>0.01</max_allowable_error>
+			</RCNLCostTerm>
+			<RCNLCostTerm>
+				<type>generalized_coordinate_tracking</type>
 				<coordinate>r_elbow_flex</coordinate>
 				<is_enabled>true</is_enabled>
-				<max_allowable_error>100</max_allowable_error>
+				<max_allowable_error>0.1</max_allowable_error>
 			</RCNLCostTerm>
 			<RCNLCostTerm>
 				<type>inverse_dynamics_load_tracking</type>
 				<load>r_elbow_flex_moment</load>
 				<is_enabled>true</is_enabled>
-				<max_allowable_error>100</max_allowable_error>
+				<max_allowable_error>0.1</max_allowable_error>
 			</RCNLCostTerm>
 			<RCNLCostTerm>
 				<type>joint_jerk_minimization</type>
 				<coordinate>r_elbow_flex</coordinate>
 				<is_enabled>true</is_enabled>
-				<max_allowable_error>200000</max_allowable_error>
+				<max_allowable_error>1</max_allowable_error>
 			</RCNLCostTerm>
 		</RCNLCostTermSet>
-		<RCNLPathConstraintTerms>
-			<RCNLConstraintTermSet>
-				<objects>
-					<RCNLConstraintTerm>
-						<type>torque_model_moment_consistency</type>
-						<load>r_elbow_flex_moment</load>
-						<is_enabled>true</is_enabled>
-						<max_error>0.1</max_error>
-						<min_error>-0.1</min_error>
-					</RCNLConstraintTerm>
-				</objects>
-				<groups />
-			</RCNLConstraintTermSet>
-		</RCNLPathConstraintTerms>
-		<RCNLTerminalConstraintTerms>
-			<RCNLConstraintTermSet>
-				<objects />
-				<groups />
-			</RCNLConstraintTermSet>
-		</RCNLTerminalConstraintTerms>
-		<!--*Optional* list prefix of the data file, if left blank, use prefix from IK folder-->
-		<trial_prefix></trial_prefix>
-    </TrackingOptimizationTool>
+		<RCNLConstraintTermSet>
+			<RCNLConstraintTerm>
+				<type>kinetic_consistency</type>
+				<load>r_elbow_flex_moment</load>
+				<is_enabled>true</is_enabled>
+				<max_error>0.1</max_error>
+				<min_error>-0.1</min_error>
+			</RCNLConstraintTerm>
+		</RCNLConstraintTermSet>
+	</TrackingOptimizationTool>
 </NMSMPipelineDocument>
